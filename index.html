@@ -94,6 +94,11 @@ section.shelf{padding:56px 0;border-top:1px solid var(--line)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
 .card{background:var(--surface);border-radius:var(--r-lg);padding:18px;display:flex;flex-direction:column;gap:14px;min-height:100%}
 .card .art{background:var(--bg);border-radius:var(--r-md);aspect-ratio:4/3;display:grid;place-items:center;color:var(--ink);position:relative}
+.art-link{display:block;border-radius:var(--r-md)}
+.art-link .art{transition:transform .25s ease, box-shadow .25s ease}
+.art-link:hover .art{transform:scale(1.02);box-shadow:0 8px 24px rgba(22,48,43,.12)}
+.art-link .art::after{content:"Ver na loja ↗";position:absolute;right:10px;bottom:10px;font-size:12px;font-weight:700;background:rgba(255,255,255,.92);color:var(--accent);padding:5px 10px;border-radius:999px}
+.title-link:hover{color:var(--accent);text-decoration:underline}
 .card .art.photo{background:#f7f7f7;overflow:hidden}
 .card .art img{width:100%;height:100%;object-fit:contain;display:block}
 .card .art svg{width:38%;height:auto;opacity:.9}
@@ -285,8 +290,8 @@ function card(it, icon){
     body = `<div class="foot"><div class="price">Melhor oferta<b>Em breve</b></div><button class="ghost" type="button" disabled>Ver oferta</button></div>`;
   }
   return `<article class="card" data-f="${it.f}">
-    <div class="art${it.img?" photo":""}">${chips.length?`<div class="tags">${chips.join("")}</div>`:""}${it.img?`<img src="${it.img}" alt="${it.n}" loading="lazy">`:`<svg aria-hidden="true"><use href="#${icon}"/></svg>`}</div>
-    <div><h3>${it.n}</h3><p class="spec">${it.s}</p></div>
+    ${it.url?`<a class="art-link" href="${it.url}" target="_blank" rel="nofollow sponsored noopener" aria-label="Ver ${it.n} ${it.store==="Shopee"?"na Shopee":"no Mercado Livre"}">`:""}<div class="art${it.img?" photo":""}">${chips.length?`<div class="tags">${chips.join("")}</div>`:""}${it.img?`<img src="${it.img}" alt="${it.n}" loading="lazy">`:`<svg aria-hidden="true"><use href="#${icon}"/></svg>`}</div>${it.url?`</a>`:""}
+    <div><h3>${it.url?`<a class="title-link" href="${it.url}" target="_blank" rel="nofollow sponsored noopener">${it.n}</a>`:it.n}</h3><p class="spec">${it.s}</p></div>
     ${body}
   </article>`;
 }
