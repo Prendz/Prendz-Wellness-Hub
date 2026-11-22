@@ -1,357 +1,92 @@
 {
- "updated_at": "2026-11-18T07:18:43Z",
+ "updated_at": null,
  "categories": [
   {
-   "id": "som",
-   "icon": "i-som",
-   "title": "Som e multimídia",
-   "sub": "Central, câmera, sensor e o som que o carro merece.",
+   "id": "suplementos",
+   "icon": "i-sup",
+   "title": "Suplementos",
+   "sub": "Só de lojas oficiais e vendedores com reputação máxima. Nada de pote sem procedência.",
    "filters": [
     "Todos",
-    "Multimídia",
-    "Segurança",
-    "Som"
+    "Proteína",
+    "Força",
+    "Energia",
+    "Saúde"
    ],
    "items": [
     {
-     "n": "Câmera de ré HD 8 LEDs",
-     "s": "Visão noturna infravermelha, à prova d'água. Nota 5,0",
-     "f": "Segurança",
-     "url": "https://meli.la/17Es3Gu",
-     "price": 28.91,
-     "original_price": 49,
-     "print_price": 28.91,
-     "print_original": 49,
-     "checked_at": "2026-11-18T07:13:00Z",
-     "price_source": "print",
-     "print_event": null,
-     "ml_id": "MLB7952636038",
-     "ml_kind": "item",
-     "img": "assets/img/camera-re.jpg",
-     "seen": [
-      {
-       "t": "2026-11-18T07:13:00Z",
-       "p": 28.91
-      }
-     ],
-     "ref_high": 49
+     "n": "Whey protein concentrado 900 g",
+     "s": "Marca com laudo de proteína, loja oficial",
+     "f": "Proteína"
     },
     {
-     "n": "Central multimídia 9\"",
-     "s": "Android Auto e CarPlay sem fio, tela IPS",
-     "f": "Multimídia"
+     "n": "Whey isolado 900 g",
+     "s": "Mais proteína por dose, menos lactose",
+     "f": "Proteína"
     },
     {
-     "n": "Sensor de estacionamento",
-     "s": "4 pontos, aviso sonoro e display",
-     "f": "Segurança"
+     "n": "Creatina monohidratada 300 g",
+     "s": "Pura, com selo de qualidade",
+     "f": "Força"
     },
     {
-     "n": "Subwoofer 12\"",
-     "s": "Caixa selada, ideal pra porta-malas",
-     "f": "Som"
+     "n": "Pré-treino",
+     "s": "Com cafeína, dose clara no rótulo",
+     "f": "Energia"
     },
     {
-     "n": "Kit 2 vias 6\"",
-     "s": "Woofer e tweeter separados, crossover passivo",
-     "f": "Som"
+     "n": "Multivitamínico",
+     "s": "Uso diário, 60 cápsulas",
+     "f": "Saúde"
     },
     {
-     "n": "Alto-falante 4 vias 6x9\"",
-     "s": "Quadriaxial pra tampão traseiro",
-     "f": "Som"
-    },
-    {
-     "n": "Módulo amplificador 4 canais",
-     "s": "Classe D, pra 2 Ω",
-     "f": "Som"
+     "n": "Ômega 3",
+     "s": "Alta concentração de EPA e DHA",
+     "f": "Saúde"
     }
    ]
   },
   {
-   "id": "rodas",
-   "icon": "i-roda",
-   "title": "Rodas",
-   "sub": "Jogos completos das marcas que mais entregam acabamento e encaixe.",
-   "filters": [
-    "Todas",
-    "Rodera",
-    "Zunky",
-    "Raw",
-    "Réplicas"
-   ],
-   "items": [
-    {
-     "n": "Lanzonne réplica T-Cross · aro 16",
-     "s": "Jogo com 4 + bicos, 5x100, preto com diamantado",
-     "f": "Réplicas",
-     "url": "https://meli.la/1EhLoDa",
-     "price": 2691.89,
-     "price_note": "ou 10x de R$ 269,19 sem juros",
-     "print_price": 2691.89,
-     "checked_at": "2026-11-18T07:13:00Z",
-     "price_source": "print",
-     "print_event": null,
-     "ml_id": "MLB6195062462",
-     "ml_kind": "item",
-     "img": "assets/img/rodas-lanzonne.jpg",
-     "seen": [
-      {
-       "t": "2026-11-18T07:13:00Z",
-       "p": 2691.89
-      }
-     ],
-     "ref_high": 3096
-    },
-    {
-     "n": "Rodera · aro 17",
-     "s": "Jogo com 4, grafite diamantado",
-     "f": "Rodera"
-    },
-    {
-     "n": "Rodera · aro 15",
-     "s": "Jogo com 4, preta fosca",
-     "f": "Rodera"
-    },
-    {
-     "n": "Zunky · aro 15",
-     "s": "Jogo com 4, preta brilhante",
-     "f": "Zunky"
-    },
-    {
-     "n": "Zunky · aro 17",
-     "s": "Jogo com 4, prata",
-     "f": "Zunky"
-    },
-    {
-     "n": "Raw · aro 18",
-     "s": "Jogo com 4, bronze, linha esportiva",
-     "f": "Raw"
-    },
-    {
-     "n": "Raw · aro 20",
-     "s": "Jogo com 4, black piano, pra SUV",
-     "f": "Raw"
-    }
-   ]
-  },
-  {
-   "id": "pneus",
-   "icon": "i-pneu",
-   "title": "Pneus",
-   "sub": "Do aro 15 pra cima. Pneu é segurança, por isso a lista é curta.",
-   "tiers": true,
+   "id": "equipamentos",
+   "icon": "i-eq",
+   "title": "Equipamentos",
+   "sub": "Pra montar uma academia em casa que dura anos, do básico ao completo.",
    "filters": [
     "Todos",
-    "Premium",
-    "Custo-benefício",
-    "Pista"
+    "Pesos",
+    "Bancos e racks",
+    "Cardio"
    ],
    "items": [
     {
-     "n": "Pirelli Scorpion · 225/55 R18 98V",
-     "s": "Kit com 2 pneus. Nota 4,9, mais de 5 mil vendidos",
-     "f": "Premium",
-     "url": "https://meli.la/2tyn7iX",
-     "ml_id": "MLB35060373",
-     "price": 1467.24,
-     "original_price": 2500,
-     "price_note": "no Pix",
-     "checked_at": "2026-11-18T06:17:00Z",
-     "price_source": "print",
-     "ml_kind": "product",
-     "print_price": 1467.24,
-     "print_original": 2500,
-     "event": "Black Friday",
-     "print_event": "Black Friday",
-     "img": "assets/img/pirelli.jpg",
-     "seen": [
-      {
-       "t": "2026-11-18T06:17:00Z",
-       "p": 1467.24
-      }
-     ],
-     "ref_high": 2500
+     "n": "Halteres ajustáveis",
+     "s": "Até 24 kg cada, troca de carga em segundos",
+     "f": "Pesos"
     },
     {
-     "n": "Pneu premium · aro 15",
-     "s": "Michelin, Pirelli ou Continental",
-     "f": "Premium"
+     "n": "Kettlebell",
+     "s": "Ferro fundido, de 8 a 24 kg",
+     "f": "Pesos"
     },
     {
-     "n": "Linglong · aro 16",
-     "s": "Importado de boa reputação, uso diário",
-     "f": "Custo-benefício"
+     "n": "Kit anilhas + barra",
+     "s": "Barra de 1,5 m com anilhas emborrachadas",
+     "f": "Pesos"
     },
     {
-     "n": "XBRI · aro 17",
-     "s": "Importado, bom equilíbrio preço x rodagem",
-     "f": "Custo-benefício"
+     "n": "Banco regulável",
+     "s": "Inclinação e declínio, até 250 kg",
+     "f": "Bancos e racks"
     },
     {
-     "n": "Semi-slick · aro 15",
-     "s": "Composto macio, só pra track day",
-     "f": "Pista"
-    }
-   ]
-  },
-  {
-   "id": "carcare",
-   "icon": "i-care",
-   "title": "Car care",
-   "sub": "Lavar, polir e proteger, do kit iniciante ao equipamento de quem leva a sério.",
-   "filters": [
-    "Todos",
-    "Lavagem",
-    "Proteção",
-    "Equipamento"
-   ],
-   "items": [
-    {
-     "n": "Soft99 Glaco Big 120 ml",
-     "s": "Cristalizador de vidros repelente de chuva. Acima de 45 a 60 km/h dispensa o limpador",
-     "f": "Proteção",
-     "url": "https://s.shopee.com.br/3g5OnN8kRt",
-     "store": "Shopee",
-     "img": "assets/img/glaco-big.jpg"
+     "n": "Esteira dobrável",
+     "s": "Pra quem tem pouco espaço",
+     "f": "Cardio"
     },
     {
-     "n": "Vonixx V-MOL 1,5 L",
-     "s": "Shampoo desincrustante concentrado. Nota 4,9, mais de 50 mil vendidos",
-     "f": "Lavagem",
-     "url": "https://meli.la/2iR9QuK",
-     "price": 40.29,
-     "print_price": 40.29,
-     "checked_at": "2026-11-18T07:13:00Z",
-     "price_source": "print",
-     "print_event": null,
-     "ml_id": "MLB4960561285",
-     "ml_kind": "item",
-     "img": "assets/img/vmol.jpg",
-     "seen": [
-      {
-       "t": "2026-11-18T07:13:00Z",
-       "p": 40.29
-      }
-     ],
-     "ref_high": 47
-    },
-    {
-     "n": "Vonixx Blend 500 ml + flanela",
-     "s": "Cera spray ceramic e carnaúba. Nota 4,9, mais de 100 mil vendidos",
-     "f": "Proteção",
-     "url": "https://meli.la/2p6ovqi",
-     "price": 45.29,
-     "original_price": 81.7,
-     "print_price": 45.29,
-     "print_original": 81.7,
-     "checked_at": "2026-11-18T07:13:00Z",
-     "price_source": "print",
-     "print_event": null,
-     "ml_id": "MLB7039318746",
-     "ml_kind": "item",
-     "img": "assets/img/vonixx-blend.jpg",
-     "seen": [
-      {
-       "t": "2026-11-18T07:13:00Z",
-       "p": 45.29
-      }
-     ],
-     "ref_high": 82
-    },
-    {
-     "n": "Toalha de microfibra",
-     "s": "600 GSM, secagem sem marcas",
-     "f": "Lavagem"
-    },
-    {
-     "n": "Lavadora de alta pressão",
-     "s": "Com aplicador de espuma",
-     "f": "Equipamento"
-    },
-    {
-     "n": "Cera de carnaúba",
-     "s": "Brilho profundo e proteção",
-     "f": "Proteção"
-    },
-    {
-     "n": "Revitalizador de plásticos",
-     "s": "Recupera o preto de para-choques e frisos",
-     "f": "Proteção"
-    },
-    {
-     "n": "Politriz roto-orbital",
-     "s": "Velocidade variável, segura pra iniciante",
-     "f": "Equipamento"
-    },
-    {
-     "n": "Kit de boinas",
-     "s": "Corte, refino e lustro",
-     "f": "Equipamento"
-    }
-   ]
-  },
-  {
-   "id": "ferramentas",
-   "icon": "i-tool",
-   "title": "Ferramentas",
-   "sub": "O básico bem feito pra resolver na garagem de casa.",
-   "filters": [
-    "Todas",
-    "Elevação",
-    "Manuais",
-    "Elétricas"
-   ],
-   "items": [
-    {
-     "n": "Parafusadeira de impacto WAP K21",
-     "s": "21 V, bateria 2000 mAh, maleta. Nota 4,8, mais de 100 mil vendidos",
-     "f": "Elétricas",
-     "url": "https://meli.la/2U6QBTt",
-     "price": 160.65,
-     "original_price": 260,
-     "price_note": "no Pix · R$ 189 em outros meios",
-     "print_price": 160.65,
-     "print_original": 260,
-     "checked_at": "2026-11-18T07:13:00Z",
-     "price_source": "print",
-     "event": "Black Friday",
-     "print_event": "Black Friday",
-     "ml_id": "MLB4514233797",
-     "ml_kind": "item",
-     "img": "assets/img/wap-k21.jpg",
-     "seen": [
-      {
-       "t": "2026-11-18T07:13:00Z",
-       "p": 160.65
-      }
-     ],
-     "ref_high": 260
-    },
-    {
-     "n": "Macaco jacaré 2 t",
-     "s": "Hidráulico, perfil baixo",
-     "f": "Elevação"
-    },
-    {
-     "n": "Cavaletes 3 t",
-     "s": "Par, com trava de segurança",
-     "f": "Elevação"
-    },
-    {
-     "n": "Chave catraca com soquetes",
-     "s": "Jogo 1/2\" e 1/4\", maleta",
-     "f": "Manuais"
-    },
-    {
-     "n": "Jogo de chaves de boca",
-     "s": "8 a 22 mm, cromo-vanádio",
-     "f": "Manuais"
-    },
-    {
-     "n": "Saca-presilhas de forro",
-     "s": "Kit em nylon, não risca o acabamento",
-     "f": "Manuais"
+     "n": "Bike ergométrica",
+     "s": "Resistência magnética, silenciosa",
+     "f": "Cardio"
     }
    ]
   },
@@ -359,28 +94,122 @@
    "id": "acessorios",
    "icon": "i-acc",
    "title": "Acessórios",
-   "sub": "Pequenas coisas que mudam o dia a dia no carro.",
+   "sub": "O que faz diferença no treino de todo dia.",
    "filters": [
     "Todos",
-    "Iluminação",
-    "Interior",
-    "Energia"
+    "Pegada",
+    "Mobilidade",
+    "Hidratação"
    ],
    "items": [
     {
-     "n": "Lâmpadas",
-     "s": "Farol, milha e iluminação interna",
-     "f": "Iluminação"
+     "n": "Strap e munhequeira",
+     "s": "Mais pegada no levantamento terra",
+     "f": "Pegada"
     },
     {
-     "n": "Tapete sob medida",
-     "s": "Feito pro seu modelo, borracha ou carpete",
-     "f": "Interior"
+     "n": "Cinto de musculação",
+     "s": "Couro, apoio lombar",
+     "f": "Pegada"
     },
     {
-     "n": "Carregador veicular USB-C",
-     "s": "Carga rápida PD, duas portas",
-     "f": "Energia"
+     "n": "Kit elásticos de resistência",
+     "s": "5 níveis, treino em qualquer lugar",
+     "f": "Mobilidade"
+    },
+    {
+     "n": "Corda de pular com rolamento",
+     "s": "Ajustável, pra cardio rápido",
+     "f": "Mobilidade"
+    },
+    {
+     "n": "Garrafa térmica 1 L",
+     "s": "Mantém gelado o treino inteiro",
+     "f": "Hidratação"
+    }
+   ]
+  },
+  {
+   "id": "recuperacao",
+   "icon": "i-rec",
+   "title": "Recuperação",
+   "sub": "Treinar é metade. A outra metade é recuperar bem.",
+   "filters": [
+    "Todos",
+    "Massagem",
+    "Mobilidade"
+   ],
+   "items": [
+    {
+     "n": "Pistola de massagem",
+     "s": "Várias ponteiras, bateria de longa duração",
+     "f": "Massagem"
+    },
+    {
+     "n": "Rolo de liberação miofascial",
+     "s": "Densidade média, com textura",
+     "f": "Mobilidade"
+    },
+    {
+     "n": "Bola de massagem",
+     "s": "Pra pontos de tensão",
+     "f": "Massagem"
+    }
+   ]
+  },
+  {
+   "id": "tecnologia",
+   "icon": "i-tech",
+   "title": "Tecnologia",
+   "sub": "Medir pra evoluir: o que não é medido não melhora.",
+   "filters": [
+    "Todos",
+    "Relógios",
+    "Balanças"
+   ],
+   "items": [
+    {
+     "n": "Smartwatch esportivo",
+     "s": "GPS, frequência cardíaca e sono",
+     "f": "Relógios"
+    },
+    {
+     "n": "Balança de bioimpedância",
+     "s": "Gordura, massa muscular e app",
+     "f": "Balanças"
+    }
+   ]
+  },
+  {
+   "id": "vestuario",
+   "icon": "i-roupa",
+   "title": "Vestuário",
+   "sub": "Roupas e calçados de treino que aguentam o uso.",
+   "filters": [
+    "Todos",
+    "Calçados",
+    "Roupas"
+   ],
+   "items": [
+    {
+     "n": "Tênis de treino",
+     "s": "Base estável pra musculação",
+     "f": "Calçados"
+    },
+    {
+     "n": "Tênis de corrida",
+     "s": "Amortecimento pra rodar longe",
+     "f": "Calçados"
+    },
+    {
+     "n": "Camiseta dry fit",
+     "s": "Seca rápido, não pesa",
+     "f": "Roupas"
+    },
+    {
+     "n": "Legging de compressão",
+     "s": "Não fica transparente no agachamento",
+     "f": "Roupas"
     }
    ]
   }

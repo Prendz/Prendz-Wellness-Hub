@@ -1,7 +1,8 @@
-# Prendz Auto Shop
+# WellnessHub
 
-Curadoria automotiva com links de afiliado do Mercado Livre.
+Curadoria fitness e bem-estar com links de afiliado (Mercado Livre e Shopee).
 
 - `index.html`: o site (GitHub Pages).
-- `data/products.json`: catálogo. Produtos com `url` têm o preço atualizado pelo robô.
-- `scripts/update_prices.py` + `.github/workflows/precos.yml`: robô que atualiza os preços a cada hora pela API oficial do Mercado Livre.
+- `data/products.json`: catálogo.
+- `assets/img/`: fotos dos produtos.
+- `scripts/` e `.github/workflows/`: robô de preços (pausado).
