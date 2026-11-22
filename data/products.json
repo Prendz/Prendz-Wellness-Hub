@@ -152,6 +152,28 @@
    ],
    "items": [
     {
+     "n": "Kit Principia skincare pele sensível + protetor FPS 60",
+     "s": "Rotina completa com gel de limpeza. Nota 4,9, mais de 100 mil vendidos",
+     "f": "Limpeza",
+     "url": "https://meli.la/2GV9Y2a",
+     "store": "Mercado Livre",
+     "official": true,
+     "img": "assets/img/principia-kit-skincare.jpg",
+     "price": 95,
+     "original_price": 137,
+     "price_note": "ou 3x de R$ 31,67 sem juros",
+     "event": "Black Friday",
+     "checked_at": "2026-11-22T17:44:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T17:44:00Z",
+       "p": 95
+      }
+     ],
+     "ref_high": 137
+    },
+    {
      "n": "Protetor solar FPS 50 esportivo",
      "s": "Resistente ao suor, toque seco",
      "f": "Proteção"
