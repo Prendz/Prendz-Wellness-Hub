@@ -1,0 +1,217 @@
+{
+ "updated_at": null,
+ "categories": [
+  {
+   "id": "suplementos",
+   "icon": "i-sup",
+   "title": "Suplementos",
+   "sub": "Só de lojas oficiais e vendedores com reputação máxima. Nada de pote sem procedência.",
+   "filters": [
+    "Todos",
+    "Proteína",
+    "Força",
+    "Energia",
+    "Saúde"
+   ],
+   "items": [
+    {
+     "n": "Whey protein concentrado 900 g",
+     "s": "Marca com laudo de proteína, loja oficial",
+     "f": "Proteína"
+    },
+    {
+     "n": "Whey isolado 900 g",
+     "s": "Mais proteína por dose, menos lactose",
+     "f": "Proteína"
+    },
+    {
+     "n": "Creatina monohidratada 300 g",
+     "s": "Pura, com selo de qualidade",
+     "f": "Força"
+    },
+    {
+     "n": "Pré-treino",
+     "s": "Com cafeína, dose clara no rótulo",
+     "f": "Energia"
+    },
+    {
+     "n": "Multivitamínico",
+     "s": "Uso diário, 60 cápsulas",
+     "f": "Saúde"
+    },
+    {
+     "n": "Ômega 3",
+     "s": "Alta concentração de EPA e DHA",
+     "f": "Saúde"
+    }
+   ]
+  },
+  {
+   "id": "equipamentos",
+   "icon": "i-eq",
+   "title": "Equipamentos",
+   "sub": "Pra montar uma academia em casa que dura anos, do básico ao completo.",
+   "filters": [
+    "Todos",
+    "Pesos",
+    "Bancos e racks",
+    "Cardio"
+   ],
+   "items": [
+    {
+     "n": "Halteres ajustáveis",
+     "s": "Até 24 kg cada, troca de carga em segundos",
+     "f": "Pesos"
+    },
+    {
+     "n": "Kettlebell",
+     "s": "Ferro fundido, de 8 a 24 kg",
+     "f": "Pesos"
+    },
+    {
+     "n": "Kit anilhas + barra",
+     "s": "Barra de 1,5 m com anilhas emborrachadas",
+     "f": "Pesos"
+    },
+    {
+     "n": "Banco regulável",
+     "s": "Inclinação e declínio, até 250 kg",
+     "f": "Bancos e racks"
+    },
+    {
+     "n": "Esteira dobrável",
+     "s": "Pra quem tem pouco espaço",
+     "f": "Cardio"
+    },
+    {
+     "n": "Bike ergométrica",
+     "s": "Resistência magnética, silenciosa",
+     "f": "Cardio"
+    }
+   ]
+  },
+  {
+   "id": "acessorios",
+   "icon": "i-acc",
+   "title": "Acessórios",
+   "sub": "O que faz diferença no treino de todo dia.",
+   "filters": [
+    "Todos",
+    "Pegada",
+    "Mobilidade",
+    "Hidratação"
+   ],
+   "items": [
+    {
+     "n": "Strap e munhequeira",
+     "s": "Mais pegada no levantamento terra",
+     "f": "Pegada"
+    },
+    {
+     "n": "Cinto de musculação",
+     "s": "Couro, apoio lombar",
+     "f": "Pegada"
+    },
+    {
+     "n": "Kit elásticos de resistência",
+     "s": "5 níveis, treino em qualquer lugar",
+     "f": "Mobilidade"
+    },
+    {
+     "n": "Corda de pular com rolamento",
+     "s": "Ajustável, pra cardio rápido",
+     "f": "Mobilidade"
+    },
+    {
+     "n": "Garrafa térmica 1 L",
+     "s": "Mantém gelado o treino inteiro",
+     "f": "Hidratação"
+    }
+   ]
+  },
+  {
+   "id": "recuperacao",
+   "icon": "i-rec",
+   "title": "Recuperação",
+   "sub": "Treinar é metade. A outra metade é recuperar bem.",
+   "filters": [
+    "Todos",
+    "Massagem",
+    "Mobilidade"
+   ],
+   "items": [
+    {
+     "n": "Pistola de massagem",
+     "s": "Várias ponteiras, bateria de longa duração",
+     "f": "Massagem"
+    },
+    {
+     "n": "Rolo de liberação miofascial",
+     "s": "Densidade média, com textura",
+     "f": "Mobilidade"
+    },
+    {
+     "n": "Bola de massagem",
+     "s": "Pra pontos de tensão",
+     "f": "Massagem"
+    }
+   ]
+  },
+  {
+   "id": "tecnologia",
+   "icon": "i-tech",
+   "title": "Tecnologia",
+   "sub": "Medir pra evoluir: o que não é medido não melhora.",
+   "filters": [
+    "Todos",
+    "Relógios",
+    "Balanças"
+   ],
+   "items": [
+    {
+     "n": "Smartwatch esportivo",
+     "s": "GPS, frequência cardíaca e sono",
+     "f": "Relógios"
+    },
+    {
+     "n": "Balança de bioimpedância",
+     "s": "Gordura, massa muscular e app",
+     "f": "Balanças"
+    }
+   ]
+  },
+  {
+   "id": "vestuario",
+   "icon": "i-roupa",
+   "title": "Vestuário",
+   "sub": "Roupas e calçados de treino que aguentam o uso.",
+   "filters": [
+    "Todos",
+    "Calçados",
+    "Roupas"
+   ],
+   "items": [
+    {
+     "n": "Tênis de treino",
+     "s": "Base estável pra musculação",
+     "f": "Calçados"
+    },
+    {
+     "n": "Tênis de corrida",
+     "s": "Amortecimento pra rodar longe",
+     "f": "Calçados"
+    },
+    {
+     "n": "Camiseta dry fit",
+     "s": "Seca rápido, não pesa",
+     "f": "Roupas"
+    },
+    {
+     "n": "Legging de compressão",
+     "s": "Não fica transparente no agachamento",
+     "f": "Roupas"
+    }
+   ]
+  }
+ ]
+}
