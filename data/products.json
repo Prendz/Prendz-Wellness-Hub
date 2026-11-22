@@ -1,5 +1,72 @@
 {
  "updated_at": null,
+ "manha": [
+  {
+   "hora": "5:00",
+   "titulo": "skincare antes de tudo",
+   "cor": "rosa",
+   "regras": [
+    {
+     "cat": "skincare"
+    }
+   ]
+  },
+  {
+   "hora": "5:20",
+   "titulo": "café e suplemento",
+   "cor": "sunrise",
+   "regras": [
+    {
+     "cat": "suplementos"
+    }
+   ]
+  },
+  {
+   "hora": "6:00",
+   "titulo": "pilates e corrida",
+   "cor": "lima",
+   "regras": [
+    {
+     "cat": "moda"
+    },
+    {
+     "cat": "equipamentos",
+     "f": "Funcional"
+    },
+    {
+     "cat": "acessorios",
+     "f": "Treino"
+    }
+   ]
+  },
+  {
+   "hora": "7:30",
+   "titulo": "pós-treino",
+   "cor": "ceu",
+   "regras": [
+    {
+     "cat": "acessorios",
+     "f": "Hidratação"
+    },
+    {
+     "cat": "acessorios",
+     "f": "Tecnologia"
+    },
+    {
+     "cat": "acessorios",
+     "f": "Recuperação"
+    },
+    {
+     "cat": "equipamentos",
+     "f": "Cardio"
+    },
+    {
+     "cat": "equipamentos",
+     "f": "Pesos"
+    }
+   ]
+  }
+ ],
  "categories": [
   {
    "id": "suplementos",
@@ -33,7 +100,13 @@
        "p": 189.05
       }
      ],
-     "ref_high": 209
+     "ref_high": 209,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Whey Adaptogen Tasty 3W 912 g · Brigadeiro",
@@ -54,7 +127,13 @@
        "p": 216
       }
      ],
-     "ref_high": 249
+     "ref_high": 249,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Whey JoyPro Shark Pro 900 g · Brigadeiro",
@@ -75,7 +154,13 @@
        "p": 107.1
       }
      ],
-     "ref_high": 119
+     "ref_high": 119,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Caffeine Army Supercoffee Língua de Gato 220 g",
@@ -97,7 +182,13 @@
       }
      ],
      "ref_high": 155,
-     "official": true
+     "official": true,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Kit Creatina Gummy My Fit (2 potes)",
@@ -118,7 +209,13 @@
        "p": 150.34
       }
      ],
-     "ref_high": 209
+     "ref_high": 209,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Whey isolado 900 g",
@@ -155,7 +252,6 @@
    "filters": [
     "Todos",
     "Feminino",
-    "Masculino",
     "Meias",
     "Tênis"
    ],
@@ -180,7 +276,13 @@
       }
      ],
      "ref_high": 80,
-     "official": true
+     "official": true,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Kit 6 pares de meias Lupo cano curto",
@@ -201,7 +303,13 @@
        "p": 64.99
       }
      ],
-     "ref_high": 160
+     "ref_high": 160,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Tênis adidas Adizero Drive RC feminino",
@@ -222,7 +330,13 @@
        "p": 746
       }
      ],
-     "ref_high": 900
+     "ref_high": 900,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Tênis adidas X_PLR Path feminino",
@@ -243,7 +357,13 @@
        "p": 377.99
       }
      ],
-     "ref_high": 500
+     "ref_high": 500,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Top Lupo Sport Seamless Max",
@@ -264,7 +384,13 @@
        "p": 113.05
       }
      ],
-     "ref_high": 119
+     "ref_high": 119,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Legging de compressão",
@@ -275,16 +401,6 @@
      "n": "Top de sustentação alta",
      "s": "Pra treino de impacto",
      "f": "Feminino"
-    },
-    {
-     "n": "Short de treino",
-     "s": "Leve, com bolso",
-     "f": "Masculino"
-    },
-    {
-     "n": "Camiseta dry fit",
-     "s": "Seca rápido, não pesa",
-     "f": "Masculino"
     },
     {
      "n": "Tênis de treino",
@@ -325,7 +441,13 @@
        "p": 1708
       }
      ],
-     "ref_high": 3699
+     "ref_high": 3699,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Bola de pilates 65 cm com bomba",
@@ -346,7 +468,13 @@
        "p": 44.03
       }
      ],
-     "ref_high": 70
+     "ref_high": 70,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Kit halteres e anilhas ajustáveis 15 kg",
@@ -367,7 +495,13 @@
        "p": 228
       }
      ],
-     "ref_high": 630
+     "ref_high": 630,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Halteres ajustáveis",
@@ -433,7 +567,13 @@
        "p": 70
       }
      ],
-     "ref_high": 81
+     "ref_high": 81,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Medicube Deep Vitamin C 55 g",
@@ -454,7 +594,13 @@
        "p": 78.74
       }
      ],
-     "ref_high": 91
+     "ref_high": 91,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Sallve firmador pró-colágeno 30 g",
@@ -475,7 +621,13 @@
        "p": 139.9
       }
      ],
-     "ref_high": 161
+     "ref_high": 161,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Sallve bastão antioleosidade 15 g",
@@ -496,7 +648,13 @@
        "p": 90.02
       }
      ],
-     "ref_high": 104
+     "ref_high": 104,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Kit Principia skincare pele sensível + protetor FPS 60",
@@ -518,7 +676,13 @@
        "p": 95
       }
      ],
-     "ref_high": 137
+     "ref_high": 137,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Protetor solar FPS 50 esportivo",
@@ -585,7 +749,13 @@
       }
      ],
      "ref_high": 99,
-     "official": true
+     "official": true,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Coqueteleira de aço inox 900 ml",
@@ -606,7 +776,13 @@
        "p": 52
       }
      ],
-     "ref_high": 79
+     "ref_high": 79,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Kit 3 mini hip bands EX",
@@ -628,7 +804,13 @@
       }
      ],
      "ref_high": 24,
-     "official": true
+     "official": true,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Kit 3 faixas de cabelo para treino",
@@ -649,7 +831,13 @@
        "p": 19.95
       }
      ],
-     "ref_high": 29
+     "ref_high": 29,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Xiaomi Smart Band 10",
@@ -670,7 +858,13 @@
        "p": 308
       }
      ],
-     "ref_high": 355
+     "ref_high": 355,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Samsung Galaxy Watch8 40 mm LTE",
@@ -691,7 +885,13 @@
        "p": 1499
       }
      ],
-     "ref_high": 2499
+     "ref_high": 2499,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Apple Watch Series 11 GPS 42 mm",
@@ -712,7 +912,13 @@
        "p": 3150
       }
      ],
-     "ref_high": 3623
+     "ref_high": 3623,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     }
     },
     {
      "n": "Strap e munhequeira",
