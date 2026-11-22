@@ -163,9 +163,52 @@
     "Todos",
     "Pesos",
     "Bancos e racks",
-    "Cardio"
+    "Cardio",
+    "Funcional"
    ],
    "items": [
+    {
+     "n": "Bike spinning Kikos S1200",
+     "s": "Roda de inércia de 13 kg. Nota 5,0",
+     "f": "Cardio",
+     "url": "https://meli.la/31M8xj2",
+     "store": "Mercado Livre",
+     "img": "assets/img/bike-kikos-s1200.jpg",
+     "price": 1708,
+     "original_price": 3699,
+     "price_note": "ou 3x de R$ 569,33 sem juros",
+     "event": null,
+     "checked_at": "2026-11-22T18:30:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T18:30:00Z",
+       "p": 1708
+      }
+     ],
+     "ref_high": 3699
+    },
+    {
+     "n": "Bola de pilates 65 cm com bomba",
+     "s": "Antiestouro, suporta até 150 kg. Nota 4,8, mais de mil vendidos",
+     "f": "Funcional",
+     "url": "https://meli.la/18H1vbv",
+     "store": "Mercado Livre",
+     "img": "assets/img/bola-pilates.jpg",
+     "price": 44.03,
+     "original_price": 69.9,
+     "price_note": "",
+     "event": null,
+     "checked_at": "2026-11-22T18:30:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T18:30:00Z",
+       "p": 44.03
+      }
+     ],
+     "ref_high": 70
+    },
     {
      "n": "Kit halteres e anilhas ajustáveis 15 kg",
      "s": "Vira halteres, barra ou kettlebell. Nota 4,8, mais de mil vendidos",
@@ -215,11 +258,6 @@
     {
      "n": "Esteira dobrável",
      "s": "Pra quem tem pouco espaço",
-     "f": "Cardio"
-    },
-    {
-     "n": "Bike ergométrica",
-     "s": "Resistência magnética, silenciosa",
      "f": "Cardio"
     }
    ]
@@ -389,6 +427,134 @@
    ],
    "items": [
     {
+     "n": "Coqueteleira Zelvi 500 ml com 3 compartimentos",
+     "s": "Porta-suplemento e cápsulas, mola de inox, livre de BPA. Nota 4,8",
+     "f": "Hidratação",
+     "url": "https://meli.la/1HoQjwv",
+     "store": "Mercado Livre",
+     "img": "assets/img/coqueteleira-zelvi.jpg",
+     "price": 28.99,
+     "original_price": 99,
+     "price_note": "",
+     "event": null,
+     "checked_at": "2026-11-22T18:30:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T18:30:00Z",
+       "p": 28.99
+      }
+     ],
+     "ref_high": 99,
+     "official": true
+    },
+    {
+     "n": "Kit 3 mini hip bands EX",
+     "s": "Faixas elásticas de tecido em 3 intensidades. Nota 4,6, mais de 5 mil vendidos",
+     "f": "Treino",
+     "url": "https://meli.la/1QDnWBx",
+     "store": "Mercado Livre",
+     "img": "assets/img/hip-bands-ex.jpg",
+     "price": 20.2,
+     "original_price": 23.22,
+     "price_note": "",
+     "event": null,
+     "checked_at": "2026-11-22T18:30:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T18:30:00Z",
+       "p": 20.2
+      }
+     ],
+     "ref_high": 24,
+     "official": true
+    },
+    {
+     "n": "Kit 3 faixas de cabelo para treino",
+     "s": "Unissex, segura o suor e o cabelo. Nota 4,6, mais de mil vendidos",
+     "f": "Treino",
+     "url": "https://meli.la/2h7M7d7",
+     "store": "Mercado Livre",
+     "img": "assets/img/faixas-cabelo.jpg",
+     "price": 19.95,
+     "original_price": 28.5,
+     "price_note": "",
+     "event": null,
+     "checked_at": "2026-11-22T18:30:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T18:30:00Z",
+       "p": 19.95
+      }
+     ],
+     "ref_high": 29
+    },
+    {
+     "n": "Xiaomi Smart Band 10",
+     "s": "Tela de 1,72\", monitora treino, sono e frequência cardíaca. Nota 4,9, mais de 10 mil vendidos",
+     "f": "Tecnologia",
+     "url": "https://meli.la/22ZtQoL",
+     "store": "Mercado Livre",
+     "img": "assets/img/xiaomi-band10.jpg",
+     "price": 308,
+     "original_price": null,
+     "price_note": "",
+     "event": null,
+     "checked_at": "2026-11-22T18:30:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T18:30:00Z",
+       "p": 308
+      }
+     ],
+     "ref_high": 355
+    },
+    {
+     "n": "Samsung Galaxy Watch8 40 mm LTE",
+     "s": "Com Galaxy AI e conexão própria. Nota 4,8, mais de mil vendidos",
+     "f": "Tecnologia",
+     "url": "https://meli.la/1Z9k9YW",
+     "store": "Mercado Livre",
+     "img": "assets/img/galaxy-watch8.jpg",
+     "price": 1499,
+     "original_price": 2499,
+     "price_note": "ou 10x de R$ 149,90 · R$ 1.424,05 com cupom",
+     "event": null,
+     "checked_at": "2026-11-22T18:30:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T18:30:00Z",
+       "p": 1499
+      }
+     ],
+     "ref_high": 2499
+    },
+    {
+     "n": "Apple Watch Series 11 GPS 42 mm",
+     "s": "Caixa ouro rosa, pulseira esportiva blush-clara. Nota 4,9, mais de mil vendidos",
+     "f": "Tecnologia",
+     "url": "https://meli.la/1WnA1ZA",
+     "store": "Mercado Livre",
+     "img": "assets/img/apple-watch-s11.jpg",
+     "price": 3150,
+     "original_price": null,
+     "price_note": "ou 3x de R$ 1.050 sem juros",
+     "event": null,
+     "checked_at": "2026-11-22T18:30:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T18:30:00Z",
+       "p": 3150
+      }
+     ],
+     "ref_high": 3623
+    },
+    {
      "n": "Strap e munhequeira",
      "s": "Mais pegada no levantamento terra",
      "f": "Treino"
@@ -396,11 +562,6 @@
     {
      "n": "Cinto de musculação",
      "s": "Couro, apoio lombar",
-     "f": "Treino"
-    },
-    {
-     "n": "Kit elásticos de resistência",
-     "s": "5 níveis, treino em qualquer lugar",
      "f": "Treino"
     },
     {
@@ -412,11 +573,6 @@
      "n": "Rolo de liberação miofascial",
      "s": "Densidade média, com textura",
      "f": "Recuperação"
-    },
-    {
-     "n": "Smartwatch esportivo",
-     "s": "GPS, frequência cardíaca e sono",
-     "f": "Tecnologia"
     },
     {
      "n": "Balança de bioimpedância",
