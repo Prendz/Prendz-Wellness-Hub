@@ -15,6 +15,49 @@
    ],
    "items": [
     {
+     "n": "Caffeine Army Supercoffee Língua de Gato 220 g",
+     "s": "Café funcional com cafeína pra energia e foco. Nota 4,9, mais de 10 mil vendidos",
+     "f": "Energia",
+     "url": "https://meli.la/14iJDRJ",
+     "store": "Mercado Livre",
+     "img": "assets/img/supercoffee.jpg",
+     "price": 119.29,
+     "original_price": 154.9,
+     "price_note": "ou 4x de R$ 29,82 sem juros",
+     "event": "Black Friday",
+     "checked_at": "2026-11-22T17:57:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T17:57:00Z",
+       "p": 119.29
+      }
+     ],
+     "ref_high": 155,
+     "official": true
+    },
+    {
+     "n": "Kit Creatina Gummy My Fit (2 potes)",
+     "s": "Creatina em goma, sabores chiclete e maçã verde, zero açúcar",
+     "f": "Força",
+     "url": "https://meli.la/314AWDD",
+     "store": "Mercado Livre",
+     "img": "assets/img/creatina-gummy.jpg",
+     "price": 150.34,
+     "original_price": 208.95,
+     "price_note": "ou 3x de R$ 50,11 sem juros",
+     "event": "Oferta imperdível",
+     "checked_at": "2026-11-22T17:57:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T17:57:00Z",
+       "p": 150.34
+      }
+     ],
+     "ref_high": 209
+    },
+    {
      "n": "Whey protein concentrado 900 g",
      "s": "Marca com laudo de proteína, loja oficial",
      "f": "Proteína"
@@ -58,6 +101,48 @@
     "Tênis"
    ],
    "items": [
+    {
+     "n": "Top Lupo Sport Seamless Max",
+     "s": "Sem costura, sustentação firme. Nota 4,9",
+     "f": "Feminino",
+     "url": "https://meli.la/2hvnGJb",
+     "store": "Mercado Livre",
+     "img": "assets/img/top-lupo.jpg",
+     "price": 113.05,
+     "original_price": 119,
+     "price_note": "no Pix · R$ 119 em outros meios",
+     "event": null,
+     "checked_at": "2026-11-22T17:57:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T17:57:00Z",
+       "p": 113.05
+      }
+     ],
+     "ref_high": 119
+    },
+    {
+     "n": "Kit regata de compressão + short Berserk",
+     "s": "Estampa dark, short com bermuda interna. Nota 4,9",
+     "f": "Masculino",
+     "url": "https://meli.la/17R5my6",
+     "store": "Mercado Livre",
+     "img": "assets/img/kit-berserk.jpg",
+     "price": 118.99,
+     "original_price": null,
+     "price_note": "ou 3x de R$ 39,66 sem juros",
+     "event": null,
+     "checked_at": "2026-11-22T17:57:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T17:57:00Z",
+       "p": 118.99
+      }
+     ],
+     "ref_high": 137
+    },
     {
      "n": "Legging de compressão",
      "s": "Não fica transparente no agachamento",
@@ -103,6 +188,27 @@
    ],
    "items": [
     {
+     "n": "Kit halteres e anilhas ajustáveis 15 kg",
+     "s": "Vira halteres, barra ou kettlebell. Nota 4,8, mais de mil vendidos",
+     "f": "Pesos",
+     "url": "https://meli.la/241xkQ1",
+     "store": "Mercado Livre",
+     "img": "assets/img/halteres-15kg.jpg",
+     "price": 228,
+     "original_price": 630,
+     "price_note": "ou 3x de R$ 76 sem juros",
+     "event": null,
+     "checked_at": "2026-11-22T17:57:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T17:57:00Z",
+       "p": 228
+      }
+     ],
+     "ref_high": 630
+    },
+    {
      "n": "Halteres ajustáveis",
      "s": "Até 24 kg cada, troca de carga em segundos",
      "f": "Pesos"
@@ -147,10 +253,95 @@
    "filters": [
     "Todos",
     "Proteção",
+    "Tratamento",
     "Limpeza",
     "Hidratação"
    ],
    "items": [
+    {
+     "n": "Creamy ácido mandélico 30 g",
+     "s": "Uso noturno, reduz oleosidade e uniformiza o tom. Nota 4,9, mais de 10 mil vendidos",
+     "f": "Tratamento",
+     "url": "https://meli.la/1LUhFwM",
+     "store": "Mercado Livre",
+     "img": "assets/img/creamy-mandelico.jpg",
+     "price": 70,
+     "original_price": null,
+     "price_note": "",
+     "event": null,
+     "checked_at": "2026-11-22T17:57:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T17:57:00Z",
+       "p": 70
+      }
+     ],
+     "ref_high": 81
+    },
+    {
+     "n": "Medicube Deep Vitamin C 55 g",
+     "s": "Hidratante facial com vitamina C e niacinamida. Nota 4,8, mais de 5 mil vendidos",
+     "f": "Hidratação",
+     "url": "https://meli.la/1ABqUdu",
+     "store": "Mercado Livre",
+     "img": "assets/img/medicube-vitc.jpg",
+     "price": 78.74,
+     "original_price": null,
+     "price_note": "",
+     "event": null,
+     "checked_at": "2026-11-22T17:57:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T17:57:00Z",
+       "p": 78.74
+      }
+     ],
+     "ref_high": 91
+    },
+    {
+     "n": "Sallve firmador pró-colágeno 30 g",
+     "s": "Peptídeos e ácido hialurônico, dia e noite",
+     "f": "Tratamento",
+     "url": "https://meli.la/2sQ79zu",
+     "store": "Mercado Livre",
+     "img": "assets/img/sallve-firmador.jpg",
+     "price": 139.9,
+     "original_price": null,
+     "price_note": "ou 3x de R$ 46,63 sem juros",
+     "event": null,
+     "checked_at": "2026-11-22T17:57:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T17:57:00Z",
+       "p": 139.9
+      }
+     ],
+     "ref_high": 161
+    },
+    {
+     "n": "Sallve bastão antioleosidade 15 g",
+     "s": "Niacinamida e zinco, prático pra levar na bolsa. Nota 4,7, mais de 10 mil vendidos",
+     "f": "Tratamento",
+     "url": "https://meli.la/2MyjtGU",
+     "store": "Mercado Livre",
+     "img": "assets/img/sallve-bastao.jpg",
+     "price": 90.02,
+     "original_price": null,
+     "price_note": "ou 3x de R$ 30,01 sem juros",
+     "event": null,
+     "checked_at": "2026-11-22T17:57:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-22T17:57:00Z",
+       "p": 90.02
+      }
+     ],
+     "ref_high": 104
+    },
     {
      "n": "Kit Principia skincare pele sensível + protetor FPS 60",
      "s": "Rotina completa com gel de limpeza. Nota 4,9, mais de 100 mil vendidos",
