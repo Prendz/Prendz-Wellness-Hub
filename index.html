@@ -10,27 +10,19 @@
 <style>
 /* Layout: loja de vitrine — nav fixa, hero com seletor de carro, trilho de categorias, prateleiras por categoria. */
 :root{
+  /* Layout: vitrine clara; verde-folha como ação, azul-água como apoio, superfícies em verde muito claro. */
   --bg:#ffffff;
-  --surface:#f4f5f7;
-  --ink:#121417;
-  --muted:#6b7079;
-  --line:#e3e5e9;
-  --accent:#e8421f;
+  --surface:#f1f6f4;
+  --ink:#16302b;
+  --muted:#5e736e;
+  --line:#dce7e3;
+  --accent:#1f8a6d;
+  --accent-2:#2c6e9b;
   --accent-ink:#ffffff;
   --display:"Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --body:"Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --r-lg:22px; --r-md:14px; --r-sm:10px;
   color-scheme: light;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#0b0c0e; --surface:#16181c; --ink:#f2f3f5; --muted:#9aa0aa; --line:#25282e;
-    --accent:#ff6a45; --accent-ink:#0b0c0e; color-scheme: dark;
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#0b0c0e; --surface:#16181c; --ink:#f2f3f5; --muted:#9aa0aa; --line:#25282e;
-  --accent:#ff6a45; --accent-ink:#0b0c0e; color-scheme: dark;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -59,7 +51,7 @@ h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;letter-spacing:-0
 /* Hero */
 .hero{padding:72px 0 56px}
 .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
-.eyebrow{font-size:15px;font-weight:600;color:var(--accent);margin-bottom:12px}
+.eyebrow{font-size:15px;font-weight:600;color:var(--accent-2);margin-bottom:12px}
 .hero h1{font-size:clamp(40px,6vw,72px);line-height:1.02;font-weight:800}
 .hero p.lead{font-size:clamp(18px,2vw,22px);color:var(--muted);max-width:30ch;margin:18px 0 28px}
 .wheel-art{width:100%;max-width:420px;justify-self:center;color:var(--ink)}
@@ -82,7 +74,7 @@ h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;letter-spacing:-0
 
 /* Category rail */
 .rail{padding:8px 0 40px}
-.rail .wrap{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.rail .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
 .cat{display:flex;flex-direction:column;align-items:center;gap:10px;padding:18px 8px;border-radius:var(--r-md);text-align:center;font-size:14px;font-weight:600;transition:background .2s}
 .cat:hover{background:var(--surface)}
 .cat svg{width:44px;height:44px}
@@ -108,7 +100,7 @@ section.shelf{padding:56px 0;border-top:1px solid var(--line)}
 .tags{position:absolute;top:10px;left:10px;right:10px;display:flex;flex-wrap:wrap;gap:6px}
 .tag{font-size:11px;font-weight:700;letter-spacing:.02em;padding:4px 8px;border-radius:6px;background:var(--surface);color:var(--muted)}
 .tag.hot{background:var(--accent);color:var(--accent-ink)}
-.tag.ev{background:var(--ink);color:var(--bg)}
+.tag.ev{background:var(--accent-2);color:#fff}
 .tag.low{background:#1f9d55;color:#fff}
 .deal .save{font-size:13px;font-weight:700;color:#1f9d55}
 .card h3{font-size:18px;font-weight:700;letter-spacing:-0.01em;line-height:1.25}
@@ -158,6 +150,7 @@ footer b{color:var(--ink)}
     <symbol id="i-rec" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="17" width="36" height="14" rx="7"/><path d="M14 17v14M22 17v14M30 17v14"/></g></symbol>
     <symbol id="i-tech" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="13" y="13" width="22" height="22" rx="6"/><path d="M18 13l2-8h8l2 8M18 35l2 8h8l2-8M19 25h3l2-4 2 7 2-3h2"/></g></symbol>
     <symbol id="i-roupa" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 6l-11 7 5 8 4-2v23h18V19l4 2 5-8-11-7c-1 4-4 6-7 6s-6-2-7-6z"/></g></symbol>
+    <symbol id="i-skin" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5c7 9 12 16 12 23a12 12 0 0 1-24 0c0-7 5-14 12-23z"/><path d="M18 29a6 6 0 0 0 6 6"/></g></symbol>
   </defs>
 </svg>
 
@@ -166,11 +159,10 @@ footer b{color:var(--ink)}
     <a href="#topo" class="logo"><i></i>Wellness<span>Hub</span></a>
     <ul>
       <li><a href="#suplementos">Suplementos</a></li>
+      <li><a href="#moda">Moda fitness</a></li>
       <li><a href="#equipamentos">Equipamentos</a></li>
+      <li><a href="#skincare">Skin care</a></li>
       <li><a href="#acessorios">Acessórios</a></li>
-      <li><a href="#recuperacao">Recuperação</a></li>
-      <li><a href="#tecnologia">Tecnologia</a></li>
-      <li><a href="#vestuario">Vestuário</a></li>
     </ul>
     <span class="spacer"></span>
     <button class="pill-btn" type="button" id="goalBtn">Meu objetivo</button>
@@ -183,7 +175,7 @@ footer b{color:var(--ink)}
       <div>
         <div class="eyebrow">Curadoria fitness e bem-estar</div>
         <h1>Treino sério merece escolha certa.</h1>
-        <p class="lead">Suplementos só de lojas oficiais e equipamentos que duram, escolhidos um a um.</p>
+        <p class="lead">Suplementos de lojas oficiais, roupas, equipamentos e skin care para quem treina, escolhidos um a um.</p>
         <div class="carbox" id="goalBox">
           <h2>Qual é o seu objetivo?</h2>
           <div class="chips" role="group" aria-label="Objetivo">
@@ -192,13 +184,16 @@ footer b{color:var(--ink)}
             <button type="button" class="chip" data-goal="Condicionamento">Condicionamento</button>
             <button type="button" class="chip" data-goal="Treinar em casa">Treinar em casa</button>
             <button type="button" class="chip" data-goal="Saúde e longevidade">Saúde e longevidade</button>
+            <button type="button" class="chip" data-goal="Cuidar da pele">Cuidar da pele</button>
           </div>
           <p class="status" id="goalStatus">Escolha um objetivo para ver por onde começar. Os kits por objetivo entram com o catálogo completo.</p>
         </div>
       </div>
       <svg class="wheel-art" viewBox="0 0 400 400" aria-hidden="true">
         <circle cx="200" cy="200" r="190" fill="var(--surface)"/>
-        <g class="lift" fill="currentColor">
+        <path d="M120 330c30-70 90-110 170-120-20 70-80 115-170 120z" fill="var(--accent)" opacity=".16"/>
+        <path d="M300 90c-10 60-50 95-110 105 10-55 50-92 110-105z" fill="var(--accent-2)" opacity=".14"/>
+        <g class="lift" fill="var(--accent-2)">
           <rect x="70" y="140" width="34" height="120" rx="10"/>
           <rect x="110" y="160" width="22" height="80" rx="8" opacity=".85"/>
           <rect x="296" y="140" width="34" height="120" rx="10"/>
@@ -215,11 +210,10 @@ footer b{color:var(--ink)}
   <nav class="rail" aria-label="Categorias">
     <div class="wrap">
       <a class="cat" href="#suplementos"><svg><use href="#i-sup"/></svg>Suplementos<small>lojas oficiais</small></a>
-      <a class="cat" href="#equipamentos"><svg><use href="#i-eq"/></svg>Equipamentos<small>treino em casa</small></a>
-      <a class="cat" href="#acessorios"><svg><use href="#i-acc"/></svg>Acessórios<small>pra academia</small></a>
-      <a class="cat" href="#recuperacao"><svg><use href="#i-rec"/></svg>Recuperação<small>pós-treino</small></a>
-      <a class="cat" href="#tecnologia"><svg><use href="#i-tech"/></svg>Tecnologia<small>medir e evoluir</small></a>
-      <a class="cat" href="#vestuario"><svg><use href="#i-roupa"/></svg>Vestuário<small>e calçados</small></a>
+      <a class="cat" href="#moda"><svg><use href="#i-roupa"/></svg>Moda fitness<small>roupas e tênis</small></a>
+      <a class="cat" href="#equipamentos"><svg><use href="#i-eq"/></svg>Equipamentos<small>de treino</small></a>
+      <a class="cat" href="#skincare"><svg><use href="#i-skin"/></svg>Skin care<small>pele de quem treina</small></a>
+      <a class="cat" href="#acessorios"><svg><use href="#i-acc"/></svg>Acessórios<small>treino e recuperação</small></a>
     </div>
   </nav>
 

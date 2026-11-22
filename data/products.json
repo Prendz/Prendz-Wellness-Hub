@@ -47,9 +47,53 @@
    ]
   },
   {
+   "id": "moda",
+   "icon": "i-roupa",
+   "title": "Moda fitness",
+   "sub": "Roupas e tênis de treino que aguentam o uso e ficam bem.",
+   "filters": [
+    "Todos",
+    "Feminino",
+    "Masculino",
+    "Tênis"
+   ],
+   "items": [
+    {
+     "n": "Legging de compressão",
+     "s": "Não fica transparente no agachamento",
+     "f": "Feminino"
+    },
+    {
+     "n": "Top de sustentação alta",
+     "s": "Pra treino de impacto",
+     "f": "Feminino"
+    },
+    {
+     "n": "Short de treino",
+     "s": "Leve, com bolso",
+     "f": "Masculino"
+    },
+    {
+     "n": "Camiseta dry fit",
+     "s": "Seca rápido, não pesa",
+     "f": "Masculino"
+    },
+    {
+     "n": "Tênis de treino",
+     "s": "Base estável pra musculação",
+     "f": "Tênis"
+    },
+    {
+     "n": "Tênis de corrida",
+     "s": "Amortecimento pra rodar longe",
+     "f": "Tênis"
+    }
+   ]
+  },
+  {
    "id": "equipamentos",
    "icon": "i-eq",
-   "title": "Equipamentos",
+   "title": "Equipamentos de treino",
    "sub": "Pra montar uma academia em casa que dura anos, do básico ao completo.",
    "filters": [
     "Todos",
@@ -74,6 +118,11 @@
      "f": "Pesos"
     },
     {
+     "n": "Corda de pular com rolamento",
+     "s": "Ajustável, pra cardio rápido",
+     "f": "Cardio"
+    },
+    {
      "n": "Banco regulável",
      "s": "Inclinação e declínio, até 250 kg",
      "f": "Bancos e racks"
@@ -91,125 +140,101 @@
    ]
   },
   {
+   "id": "skincare",
+   "icon": "i-skin",
+   "title": "Skin care",
+   "sub": "Cuidados pra pele de quem sua, pega sol e treina todo dia.",
+   "filters": [
+    "Todos",
+    "Proteção",
+    "Limpeza",
+    "Hidratação"
+   ],
+   "items": [
+    {
+     "n": "Protetor solar FPS 50 esportivo",
+     "s": "Resistente ao suor, toque seco",
+     "f": "Proteção"
+    },
+    {
+     "n": "Protetor labial com FPS",
+     "s": "Pra treino ao ar livre",
+     "f": "Proteção"
+    },
+    {
+     "n": "Gel de limpeza facial",
+     "s": "Remove suor e oleosidade sem ressecar",
+     "f": "Limpeza"
+    },
+    {
+     "n": "Hidratante facial oil-free",
+     "s": "Leve, não obstrui os poros",
+     "f": "Hidratação"
+    },
+    {
+     "n": "Sérum de vitamina C",
+     "s": "Antioxidante pro dia a dia",
+     "f": "Hidratação"
+    },
+    {
+     "n": "Hidratante corporal pós-treino",
+     "s": "Absorção rápida",
+     "f": "Hidratação"
+    }
+   ]
+  },
+  {
    "id": "acessorios",
    "icon": "i-acc",
    "title": "Acessórios",
-   "sub": "O que faz diferença no treino de todo dia.",
+   "sub": "Do treino à recuperação: o que faz diferença no dia a dia.",
    "filters": [
     "Todos",
-    "Pegada",
-    "Mobilidade",
+    "Treino",
+    "Recuperação",
+    "Tecnologia",
     "Hidratação"
    ],
    "items": [
     {
      "n": "Strap e munhequeira",
      "s": "Mais pegada no levantamento terra",
-     "f": "Pegada"
+     "f": "Treino"
     },
     {
      "n": "Cinto de musculação",
      "s": "Couro, apoio lombar",
-     "f": "Pegada"
+     "f": "Treino"
     },
     {
      "n": "Kit elásticos de resistência",
      "s": "5 níveis, treino em qualquer lugar",
-     "f": "Mobilidade"
+     "f": "Treino"
     },
     {
-     "n": "Corda de pular com rolamento",
-     "s": "Ajustável, pra cardio rápido",
-     "f": "Mobilidade"
+     "n": "Pistola de massagem",
+     "s": "Várias ponteiras, bateria de longa duração",
+     "f": "Recuperação"
+    },
+    {
+     "n": "Rolo de liberação miofascial",
+     "s": "Densidade média, com textura",
+     "f": "Recuperação"
+    },
+    {
+     "n": "Smartwatch esportivo",
+     "s": "GPS, frequência cardíaca e sono",
+     "f": "Tecnologia"
+    },
+    {
+     "n": "Balança de bioimpedância",
+     "s": "Gordura, massa muscular e app",
+     "f": "Tecnologia"
     },
     {
      "n": "Garrafa térmica 1 L",
      "s": "Mantém gelado o treino inteiro",
      "f": "Hidratação"
-    }
-   ]
-  },
-  {
-   "id": "recuperacao",
-   "icon": "i-rec",
-   "title": "Recuperação",
-   "sub": "Treinar é metade. A outra metade é recuperar bem.",
-   "filters": [
-    "Todos",
-    "Massagem",
-    "Mobilidade"
-   ],
-   "items": [
-    {
-     "n": "Pistola de massagem",
-     "s": "Várias ponteiras, bateria de longa duração",
-     "f": "Massagem"
-    },
-    {
-     "n": "Rolo de liberação miofascial",
-     "s": "Densidade média, com textura",
-     "f": "Mobilidade"
-    },
-    {
-     "n": "Bola de massagem",
-     "s": "Pra pontos de tensão",
-     "f": "Massagem"
-    }
-   ]
-  },
-  {
-   "id": "tecnologia",
-   "icon": "i-tech",
-   "title": "Tecnologia",
-   "sub": "Medir pra evoluir: o que não é medido não melhora.",
-   "filters": [
-    "Todos",
-    "Relógios",
-    "Balanças"
-   ],
-   "items": [
-    {
-     "n": "Smartwatch esportivo",
-     "s": "GPS, frequência cardíaca e sono",
-     "f": "Relógios"
-    },
-    {
-     "n": "Balança de bioimpedância",
-     "s": "Gordura, massa muscular e app",
-     "f": "Balanças"
-    }
-   ]
-  },
-  {
-   "id": "vestuario",
-   "icon": "i-roupa",
-   "title": "Vestuário",
-   "sub": "Roupas e calçados de treino que aguentam o uso.",
-   "filters": [
-    "Todos",
-    "Calçados",
-    "Roupas"
-   ],
-   "items": [
-    {
-     "n": "Tênis de treino",
-     "s": "Base estável pra musculação",
-     "f": "Calçados"
-    },
-    {
-     "n": "Tênis de corrida",
-     "s": "Amortecimento pra rodar longe",
-     "f": "Calçados"
-    },
-    {
-     "n": "Camiseta dry fit",
-     "s": "Seca rápido, não pesa",
-     "f": "Roupas"
-    },
-    {
-     "n": "Legging de compressão",
-     "s": "Não fica transparente no agachamento",
-     "f": "Roupas"
     }
    ]
   }
