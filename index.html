@@ -245,7 +245,7 @@ footer b{color:var(--ink)}
 const TIERS = "";
 
 
-const FRESH_HOURS = 6;
+const FRESH_HOURS = 30;
 const brl = v => v.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
 function ago(iso){
   const m = Math.max(1, Math.round((Date.now()-new Date(iso).getTime())/60000));
