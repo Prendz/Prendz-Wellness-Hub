@@ -962,12 +962,25 @@
      "f": "Recuperação"
     },
     {
-     "n": "Balança inteligente de bioimpedância Xiaomi",
-     "s": "Conecta ao app pelo Bluetooth e guarda o histórico de peso, gordura e massa muscular",
+     "n": "Balança Xiaomi Scale S400 com bioimpedância",
+     "s": "Bluetooth 5.0, mostra peso e composição corporal no app. Nota 4,8, mais de mil vendidos",
      "f": "Tecnologia",
      "url": "https://meli.la/1qC5jY7",
      "store": "Mercado Livre",
      "img": "assets/img/balanca-xiaomi.jpg",
+     "price": 222,
+     "original_price": null,
+     "price_note": "ou 3x de R$ 74 sem juros",
+     "event": null,
+     "checked_at": "2026-11-23T10:52:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-23T10:52:00Z",
+       "p": 222
+      }
+     ],
+     "ref_high": 222,
      "curadoria": {
       "por_que": "",
       "testado": "",
