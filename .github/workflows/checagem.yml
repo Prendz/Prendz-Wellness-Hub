@@ -53,6 +53,14 @@ jobs:
           texto = "### Lighthouse (celular)\n\n" + "\n".join(linhas) + "\n"
           print(texto)
           open(os.environ["GITHUB_STEP_SUMMARY"], "a").write(texto)
+          perf = [a for a in r["audits"].values() if a.get("score") is not None and a["score"] < 0.9 and a.get("scoreDisplayMode") in ("numeric", "binary", "metricSavings")]
+          print("Pontos a melhorar:")
+          for a in sorted(perf, key=lambda a: a["score"]):
+              print(f"  - {a['id']}: {a.get('displayValue', '')} (nota {round(a['score'] * 100)})")
+          for k in ("first-contentful-paint", "largest-contentful-paint", "total-blocking-time", "cumulative-layout-shift", "speed-index"):
+              print(f"  {k}: {r['audits'][k].get('displayValue')}")
+          lcp = r["audits"].get("largest-contentful-paint-element", {}).get("details", {})
+          print("  elemento LCP:", json.dumps(lcp)[:400])
           for b in baixo:
               print(f"::warning::Lighthouse abaixo de 80 — {b}")
           PY
