@@ -27,7 +27,8 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,900;1,9..144,600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,900;1,9..144,600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,900;1,9..144,600&display=swap"></noscript>
 <style>
 /* The 5am Club — identidade: matcha, lima, sunrise, rosa patch, céu das 5 e creme.
    Fraunces (títulos), DM Sans (texto), Caveat (detalhe escrito à mão). */
@@ -413,6 +414,9 @@ const storeBadge = it => `<span class="store ${it.store==="Shopee"?"sh":"ml"}">$
 // Linha escrita à mão no card: o "por que entrou" da curadoria; sem ele, a descrição sem a nota da loja (que vai pra ficha).
 const shortSpec = s => String(s||"").replace(/\.?\s*Nota\s+\d.*$/i,"").trim() || s;
 const photo = it => it.img_clube || it.img;
+// versão pequena (360 px) gerada por robo/fotos.py em assets/img/sm/
+const small = src => src.replace("assets/img/", "assets/img/sm/");
+const imgSet = (src, sizes) => `src="${small(src)}" srcset="${small(src)} 360w, ${src} 720w" sizes="${sizes}"`;
 
 function sealSvg(){
   const id = "sp" + (++sealN);
@@ -463,10 +467,10 @@ function card(it, cat){
   }
   return `<article class="card" data-f="${esc(it.f)}">
     <div class="media">
-      <a class="art-link" href="${esc(it.url)}" ${rel} aria-label="Ver ${esc(it.n)} ${storeIn(it)}"><div class="art">${photo(it)?`<img src="${photo(it)}" alt="${esc(it.n)}" loading="lazy" decoding="async" width="720" height="720">`:`<svg aria-hidden="true"><use href="#${cat.icon}"/></svg>`}</div></a>
+      <a class="art-link" href="${esc(it.url)}" ${rel} aria-label="Ver ${esc(it.n)} ${storeIn(it)}"><div class="art">${photo(it)?`<img ${imgSet(photo(it), "(min-width:640px) 260px, 50vw")} alt="${esc(it.n)}" loading="lazy" decoding="async" width="720" height="720">`:`<svg aria-hidden="true"><use href="#${cat.icon}"/></svg>`}</div></a>
       ${chips.length?`<div class="tags">${chips.join("")}</div>`:""}
       ${it.official?`<span class="official"><svg width="11" height="11"><use href="#i-check"/></svg>loja oficial</span>`:""}
-      <button class="seal" type="button" data-ficha="${id}" aria-label="Por que ${esc(it.n)} entrou no clube">${sealSvg()}</button>
+      <button class="seal" type="button" data-ficha="${id}" aria-label="Aprovado pelo clube: por que ${esc(it.n)} entrou">${sealSvg()}</button>
     </div>
     <div class="body">
       <div class="meta"><span class="brand">${esc(it.marca || "")}</span>${storeBadge(it)}</div>
@@ -503,7 +507,7 @@ function openFicha(id, push=true){
         <button class="f-close" type="button" aria-label="Fechar ficha" data-close><svg width="18" height="18" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="#1F3D2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <div class="arch"></div>
         <svg class="sun" viewBox="0 0 100 62" style="color:var(--sunrise)"><use href="#i-sun"/></svg>
-        <div class="pic">${photo(it)?`<img src="${photo(it)}" alt="${esc(it.n)}" decoding="async">`:""}</div>
+        <div class="pic">${photo(it)?`<img ${imgSet(photo(it), "200px")} alt="${esc(it.n)}" decoding="async">`:""}</div>
         <div class="f-seal">${sealSvg()}</div>
       </div>
       <div class="f-body">
@@ -555,7 +559,7 @@ function renderManha(MANHA, CATS){
     const first = lists[i].find(x=>photo(x.it));
     return `<button type="button" class="tc" style="background:${COLORS[m.cor]||"var(--lima)"}" data-m="${i}" aria-pressed="false">
       <span class="h">${esc(m.hora)}</span><span class="l">${esc(m.titulo)}</span>
-      ${first?`<span class="ph"><img src="${photo(first.it)}" alt="" loading="lazy"></span>`:""}</button>`;
+      ${first?`<span class="ph"><img src="${small(photo(first.it))}" alt="" loading="lazy" decoding="async"></span>`:""}</button>`;
   }).join("");
   function pick(i){
     times.querySelectorAll(".tc").forEach(b=>b.setAttribute("aria-pressed", b.dataset.m==i));
@@ -571,7 +575,7 @@ function renderHero(MANHA, CATS){
   const art = document.getElementById("heroArt");
   const picks = [];
   for(const m of (MANHA||[])){ const x = momentItems(m, CATS).find(x=>photo(x.it) && !picks.includes(x.it)); if(x) picks.push(x.it); if(picks.length===3) break; }
-  art.insertAdjacentHTML("beforeend", picks.map((it,i)=>`<div class="shot s${i+1}"><img src="${photo(it)}" alt=""></div>`).join(""));
+  art.insertAdjacentHTML("beforeend", picks.map((it,i)=>`<div class="shot s${i+1}"><img ${imgSet(photo(it), "(min-width:761px) 260px, 45vw")} alt="" decoding="async"></div>`).join(""));
 }
 
 /* ---------- Prateleiras por categoria ---------- */

@@ -59,6 +59,9 @@ jobs:
               print(f"  - {a['id']}: {a.get('displayValue', '')} (nota {round(a['score'] * 100)})")
           for k in ("first-contentful-paint", "largest-contentful-paint", "total-blocking-time", "cumulative-layout-shift", "speed-index"):
               print(f"  {k}: {r['audits'][k].get('displayValue')}")
+          for aid in ("color-contrast", "label-content-name-mismatch"):
+              for it in (r["audits"].get(aid, {}).get("details", {}) or {}).get("items", [])[:6]:
+                  print(f"  {aid}: {it.get('node', {}).get('selector')} | {it.get('node', {}).get('snippet', '')[:90]}")
           lcp = r["audits"].get("largest-contentful-paint-element", {}).get("details", {})
           print("  elemento LCP:", json.dumps(lcp)[:400])
           for b in baixo:
