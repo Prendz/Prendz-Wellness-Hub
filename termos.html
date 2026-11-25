@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termos de uso · The 5am Club</title>
+<meta name="description" content="Como funciona a curadoria, os preços e os links de afiliado do The 5am Club.">
+<meta name="theme-color" content="#1F3D2B">
+<link rel="icon" href="https://prendz.github.io/the5amclub/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="https://prendz.github.io/the5amclub/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="https://prendz.github.io/the5amclub/apple-touch-icon.png">
+<meta property="og:image" content="https://prendz.github.io/the5amclub/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBF4E6;color:#1F3D2B;font-family:"DM Sans",system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.top{background:#1F3D2B;color:#FBF4E6;padding:14px 18px}
+.top a{text-decoration:none;font-family:Fraunces,Georgia,serif;font-size:24px}
+.top i{font-weight:400} .top b{font-weight:900}
+main{max-width:760px;margin:0 auto;padding:32px 18px 60px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:900;font-size:clamp(30px,6vw,44px);line-height:1.1;margin:0 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-size:22px;margin:30px 0 6px}
+.muted{color:#5d6f63;font-size:14px}
+.btn{display:inline-block;background:#1F3D2B;color:#FBF4E6;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:999px;margin-top:18px}
+footer{max-width:760px;margin:0 auto;padding:0 18px 40px;font-size:13px;color:#5d6f63}
+footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<header class="top"><a href="https://prendz.github.io/the5amclub/"><i>the</i> <b>5am</b> <b>club</b></a></header>
+<main>
+<h1>Termos de uso</h1>
+<p class="muted">Última atualização: 25 de novembro de 2026</p>
+
+<h2>O que é o The 5am Club</h2>
+<p>O The 5am Club é um site de curadoria. Selecionamos produtos de skincare, moda fitness, suplementos, equipamentos de treino e acessórios vendidos no Mercado Livre e na Shopee. Nós não vendemos, não estocamos e não entregamos nenhum produto.</p>
+
+<h2>Compras</h2>
+<p>Ao clicar em um produto, você é levado para a página da loja. A compra é feita diretamente com o vendedor, nas condições da loja: preço, frete, prazo, troca, devolução e garantia. Dúvidas e problemas com o pedido devem ser resolvidos com o vendedor ou pelo atendimento da loja.</p>
+
+<h2>Preços e ofertas</h2>
+<p>Os preços mostrados são lidos das lojas e atualizados periodicamente, com a data e hora da última checagem. Como as lojas mudam preços e promoções a qualquer momento, o valor que vale é sempre o que aparece na página da loja no momento da compra.</p>
+
+<h2>Comissão</h2>
+<p>Os links do site são links de afiliado. Quando você compra por eles, o The 5am Club pode receber uma comissão da loja. Você não paga nada a mais por isso. A comissão não define quais produtos entram na curadoria.</p>
+
+<h2>Informações sobre os produtos</h2>
+<p>As descrições e fichas da curadoria são informativas e não substituem a orientação de profissionais. Suplementos não substituem uma alimentação equilibrada nem a orientação de nutricionista ou médico. Para skincare, siga as indicações do fabricante e, se tiver dúvidas, consulte um dermatologista.</p>
+
+<h2>Marcas e imagens</h2>
+<p>Marcas, nomes e fotos dos produtos pertencem aos seus fabricantes e vendedores e são usados apenas para identificar os produtos indicados.</p>
+
+<h2>Contato</h2>
+<p>Fale com a gente <span data-contato>pelos canais indicados no rodapé do site</span>. Estes termos podem ser atualizados, e a data no topo da página mostra a versão mais recente.</p>
+</main>
+<footer><a href="https://prendz.github.io/the5amclub/">Início</a><a href="https://prendz.github.io/the5amclub/privacidade.html">Política de privacidade</a><a href="https://prendz.github.io/the5amclub/termos.html">Termos de uso</a></footer>
+<script>
+fetch("https://prendz.github.io/the5amclub/data/site.json",{cache:"no-store"}).then(r=>r.json()).then(c=>{
+  document.querySelectorAll("[data-contato]").forEach(el=>{
+    el.innerHTML = c.email ? `pelo e-mail <a href="mailto:${c.email}">${c.email}</a>` : "pelos canais indicados no rodapé do site";
+  });
+}).catch(()=>{});
+</script>
+</body>
+</html>

@@ -6,9 +6,25 @@
 <title>The 5am Club · curadoria para o seu melhor horário</title>
 <meta name="description" content="Skincare, roupa de treino, suplemento e acessórios escolhidos um a um para a sua rotina da manhã. Você compra direto no Mercado Livre e na Shopee.">
 <meta name="theme-color" content="#1F3D2B">
-<meta property="og:title" content="The 5am Club">
-<meta property="og:description" content="curadoria para o seu melhor horário.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231F3D2B'/%3E%3Cpath d='M24 56 A26 26 0 0 1 76 56 Z' fill='%23F79A3E'/%3E%3Crect x='18' y='61' width='64' height='6' rx='2' fill='%23F79A3E'/%3E%3Crect x='14' y='72' width='72' height='6' rx='2' fill='%23F79A3E'/%3E%3C/svg%3E">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="The 5am Club">
+<meta property="og:url" content="https://prendz.github.io/the5amclub/">
+<meta property="og:title" content="The 5am Club · curadoria para o seu melhor horário">
+<meta property="og:description" content="Skincare, moda fit, suplementos e equipamentos escolhidos um a um para a sua rotina da manhã.">
+<meta property="og:image" content="https://prendz.github.io/the5amclub/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The 5am Club: curadoria para o seu melhor horário">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://prendz.github.io/the5amclub/og-image.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"The 5am Club","url":"https://prendz.github.io/the5amclub/","inLanguage":"pt-BR","description":"Curadoria de skincare, moda fitness, suplementos, equipamentos de treino e acessórios para a rotina da manhã."}</script>
+<link rel="canonical" href="https://prendz.github.io/the5amclub/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,900;1,9..144,600&display=swap" rel="stylesheet">
@@ -203,6 +219,20 @@ footer .wrap{display:grid;gap:12px}
 footer .logo{font-size:28px;color:var(--creme)}
 footer .tag-line{font-family:var(--hand);font-size:22px;color:var(--lima)}
 footer p{margin:0;opacity:.8;max-width:80ch}
+.loading{padding:30px 0}.loading .wrap{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}
+.sk{aspect-ratio:3/4;border-radius:var(--r-lg);background:linear-gradient(90deg,#f3ecdd 0%,#fff 50%,#f3ecdd 100%);background-size:200% 100%;animation:sk 1.2s linear infinite}
+.loading p{grid-column:1/-1;margin:0;color:var(--muted);font-size:14px}
+@keyframes sk{to{background-position:-200% 0}}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:6px}
+footer nav a{text-decoration:underline;text-underline-offset:3px;opacity:.95}
+.consent{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;max-width:560px;margin:0 auto;background:#fff;color:var(--ink);border-radius:var(--r-md);box-shadow:0 10px 30px rgba(31,61,43,.25);padding:14px 16px;font-size:14px;display:grid;gap:10px}
+.consent .row{display:flex;gap:8px;justify-content:flex-end}
+.consent button{font:inherit;font-weight:700;border-radius:999px;padding:8px 16px;border:1.5px solid var(--matcha);background:#fff;color:var(--matcha);cursor:pointer}
+.consent button.ok{background:var(--matcha);color:var(--creme)}
+.wa{position:fixed;right:16px;bottom:16px;z-index:50;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+.wa svg{width:30px;height:30px;fill:#fff}
+@media(min-width:900px){.wa{display:none}}
+
 
 /* Ficha do clube */
 dialog.ficha{border:0;padding:0;background:var(--creme);color:var(--ink);width:min(520px,100%);max-width:100%;max-height:92vh;border-radius:28px;overflow:hidden;box-shadow:0 30px 80px -20px rgba(0,0,0,.5)}
@@ -319,7 +349,7 @@ dialog.ficha::backdrop{background:rgba(20,36,26,.55);backdrop-filter:blur(3px)}
     </section>
   </div>
 
-  <div id="shelves"></div>
+  <div id="shelves" aria-busy="true"><section class="loading"><div class="wrap"><p role="status">carregando o catálogo…</p><div class="sk"></div><div class="sk"></div><div class="sk"></div><div class="sk"></div></div></section></div>
 
   <section class="how" id="curadoria">
     <div class="wrap">
@@ -339,6 +369,8 @@ dialog.ficha::backdrop{background:rgba(20,36,26,.55);backdrop-filter:blur(3px)}
     <span class="tag-line">curadoria para o seu melhor horário.</span>
     <p>Versão de pré-lançamento. Preços e ofertas podem mudar a qualquer momento nas lojas.</p>
     <p>O The 5am Club é um site de curadoria. As compras são feitas no Mercado Livre e na Shopee, direto com o vendedor, e o clube pode receber comissão pelas indicações, sem custo extra pra você. Suplementos não substituem orientação de nutricionista ou médico.</p>
+    <p id="contato" hidden></p>
+    <nav aria-label="Informações"><a href="privacidade.html">Política de privacidade</a><a href="termos.html">Termos de uso</a><a href="#" id="cookiePrefs" hidden>Preferências de cookies</a></nav>
   </div>
 </footer>
 
@@ -431,7 +463,7 @@ function card(it, cat){
   }
   return `<article class="card" data-f="${esc(it.f)}">
     <div class="media">
-      <a class="art-link" href="${it.url}" ${rel} aria-label="Ver ${esc(it.n)} ${storeIn(it)}"><div class="art">${photo(it)?`<img src="${photo(it)}" alt="${esc(it.n)}" loading="lazy">`:`<svg aria-hidden="true"><use href="#${cat.icon}"/></svg>`}</div></a>
+      <a class="art-link" href="${it.url}" ${rel} aria-label="Ver ${esc(it.n)} ${storeIn(it)}"><div class="art">${photo(it)?`<img src="${photo(it)}" alt="${esc(it.n)}" loading="lazy" decoding="async" width="720" height="720">`:`<svg aria-hidden="true"><use href="#${cat.icon}"/></svg>`}</div></a>
       ${chips.length?`<div class="tags">${chips.join("")}</div>`:""}
       ${it.official?`<span class="official"><svg width="11" height="11"><use href="#i-check"/></svg>loja oficial</span>`:""}
       <button class="seal" type="button" data-ficha="${id}" aria-label="Por que ${esc(it.n)} entrou no clube">${sealSvg()}</button>
@@ -471,7 +503,7 @@ function openFicha(id, push=true){
         <button class="f-close" type="button" aria-label="Fechar ficha" data-close><svg width="18" height="18" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="#1F3D2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <div class="arch"></div>
         <svg class="sun" viewBox="0 0 100 62" style="color:var(--sunrise)"><use href="#i-sun"/></svg>
-        <div class="pic">${photo(it)?`<img src="${photo(it)}" alt="">`:""}</div>
+        <div class="pic">${photo(it)?`<img src="${photo(it)}" alt="${esc(it.n)}" decoding="async">`:""}</div>
         <div class="f-seal">${sealSvg()}</div>
       </div>
       <div class="f-body">
@@ -581,10 +613,47 @@ fetch("data/products.json", {cache:"no-store"}).then(r=>r.json()).then(d=>{
   renderHero(d.manha, CATS);
   renderManha(d.manha, CATS);
   render(CATS);
+  document.getElementById("shelves").removeAttribute("aria-busy");
   const h = decodeURIComponent(location.hash);
   if(h.startsWith("#ficha-")) openFicha(h.slice(7), false);
   else if(h.length>1){ const el = document.getElementById(h.slice(1)); if(el) el.scrollIntoView(); }
 }).catch(()=>{ document.getElementById("shelves").innerHTML = '<section class="shelf"><div class="wrap"><p>Não foi possível carregar o catálogo agora. Recarregue a página.</p></div></section>'; });
+
+/* Configurações do site (data/site.json): contato, WhatsApp e Google Analytics com consentimento. */
+fetch("data/site.json",{cache:"no-store"}).then(r=>r.json()).then(cfg=>{
+  const parts=[];
+  if(cfg.email) parts.push(`Contato: <a href="mailto:${cfg.email}">${cfg.email}</a>`);
+  if(cfg.instagram) parts.push(`<a href="https://instagram.com/${cfg.instagram.replace("@","")}" target="_blank" rel="noopener">@${cfg.instagram.replace("@","")}</a>`);
+  if(parts.length){ const c=document.getElementById("contato"); c.innerHTML=parts.join(" · "); c.hidden=false; }
+  if(cfg.whatsapp){
+    const n=cfg.whatsapp.replace(/\D/g,"");
+    document.body.insertAdjacentHTML("beforeend",`<a class="wa" href="https://wa.me/${n}?text=${encodeURIComponent("Oi! Vim pelo site do The 5am Club.")}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.3c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg></a>`);
+  }
+  if(cfg.ga_id) setupConsent(cfg.ga_id);
+}).catch(()=>{});
+function loadGA(id){
+  if(window.gtag) return;
+  const s=document.createElement("script"); s.async=true; s.src=`https://www.googletagmanager.com/gtag/js?id=${id}`; document.head.appendChild(s);
+  window.dataLayer=window.dataLayer||[]; window.gtag=function(){dataLayer.push(arguments)};
+  gtag("js",new Date()); gtag("config",id,{anonymize_ip:true});
+  document.addEventListener("click",e=>{ const a=e.target.closest("a[rel~=sponsored]"); if(a) gtag("event","clique_loja",{link_url:a.href}); });
+}
+function setupConsent(id){
+  let pref=null; try{ pref=localStorage.getItem("5am-cookies"); }catch(e){}
+  const prefs=document.getElementById("cookiePrefs"); prefs.hidden=false;
+  const ask=()=>{
+    if(document.querySelector(".consent")) return;
+    document.body.insertAdjacentHTML("beforeend",`<div class="consent" role="dialog" aria-label="Aviso de cookies"><span>Usamos cookies de análise (Google Analytics) para entender quais produtos interessam mais. As lojas parceiras também usam cookies para registrar a indicação. <a href="privacidade.html" style="text-decoration:underline">Saiba mais</a></span><div class="row"><button type="button" data-c="no">Recusar</button><button type="button" class="ok" data-c="yes">Aceitar</button></div></div>`);
+    document.querySelector(".consent").addEventListener("click",e=>{
+      const b=e.target.closest("button"); if(!b) return;
+      try{ localStorage.setItem("5am-cookies",b.dataset.c); }catch(err){}
+      document.querySelector(".consent").remove();
+      if(b.dataset.c==="yes") loadGA(id);
+    });
+  };
+  prefs.addEventListener("click",e=>{e.preventDefault(); ask();});
+  if(pref==="yes") loadGA(id); else if(!pref) ask();
+}
 </script>
 </body>
 </html>

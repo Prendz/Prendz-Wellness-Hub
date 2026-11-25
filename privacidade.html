@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade · The 5am Club</title>
+<meta name="description" content="Como o The 5am Club trata dados e cookies.">
+<meta name="theme-color" content="#1F3D2B">
+<link rel="icon" href="https://prendz.github.io/the5amclub/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="https://prendz.github.io/the5amclub/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="https://prendz.github.io/the5amclub/apple-touch-icon.png">
+<meta property="og:image" content="https://prendz.github.io/the5amclub/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBF4E6;color:#1F3D2B;font-family:"DM Sans",system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.top{background:#1F3D2B;color:#FBF4E6;padding:14px 18px}
+.top a{text-decoration:none;font-family:Fraunces,Georgia,serif;font-size:24px}
+.top i{font-weight:400} .top b{font-weight:900}
+main{max-width:760px;margin:0 auto;padding:32px 18px 60px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:900;font-size:clamp(30px,6vw,44px);line-height:1.1;margin:0 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-size:22px;margin:30px 0 6px}
+.muted{color:#5d6f63;font-size:14px}
+.btn{display:inline-block;background:#1F3D2B;color:#FBF4E6;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:999px;margin-top:18px}
+footer{max-width:760px;margin:0 auto;padding:0 18px 40px;font-size:13px;color:#5d6f63}
+footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<header class="top"><a href="https://prendz.github.io/the5amclub/"><i>the</i> <b>5am</b> <b>club</b></a></header>
+<main>
+<h1>Política de privacidade</h1>
+<p class="muted">Última atualização: 25 de novembro de 2026</p>
+<p>O The 5am Club é um site de curadoria de produtos de bem-estar. Esta política explica, em linguagem simples, quais dados são tratados quando você usa o site, de acordo com a Lei Geral de Proteção de Dados (Lei 13.709/2018).</p>
+
+<h2>Dados que coletamos</h2>
+<p>O site não tem cadastro, login, formulário nem carrinho. Não pedimos nome, e-mail, CPF, endereço ou dados de pagamento.</p>
+<p>Guardamos no seu próprio navegador (armazenamento local) apenas preferências de uso, como o horário da manhã que você escolheu e a sua resposta ao aviso de cookies. Essas informações não saem do seu aparelho.</p>
+
+<h2>Cookies de análise</h2>
+<p>Se você aceitar no aviso de cookies, usamos o Google Analytics para medir visitas e cliques de forma agregada: páginas vistas, tipo de aparelho, cidade aproximada e quais produtos receberam cliques. O endereço IP é anonimizado. Se você recusar, o Google Analytics não é carregado. Você pode mudar sua escolha a qualquer momento pelo link "Preferências de cookies" no rodapé.</p>
+
+<h2>Links para lojas parceiras</h2>
+<p>Os botões e fotos dos produtos levam ao Mercado Livre e à Shopee por links de afiliado. Ao abrir esses links, a loja pode gravar cookies próprios para registrar que a visita veio do The 5am Club. A compra, o pagamento e a entrega acontecem inteiramente na loja, que trata os seus dados conforme a política de privacidade dela.</p>
+<p>Essas políticas estão disponíveis no site de cada loja.</p>
+
+<h2>Serviços de terceiros</h2>
+<p>O site é hospedado no GitHub Pages e usa fontes do Google Fonts. Esses serviços recebem dados técnicos da conexão (como endereço IP e navegador) para entregar as páginas.</p>
+
+<h2>Seus direitos</h2>
+<p>Você pode pedir informações sobre o tratamento de dados, correção ou exclusão. Como não guardamos dados pessoais em servidor próprio, na prática basta recusar os cookies de análise e limpar os dados do site no seu navegador. Para qualquer dúvida, fale com a gente <span data-contato>pelos canais indicados no rodapé do site</span>.</p>
+</main>
+<footer><a href="https://prendz.github.io/the5amclub/">Início</a><a href="https://prendz.github.io/the5amclub/privacidade.html">Política de privacidade</a><a href="https://prendz.github.io/the5amclub/termos.html">Termos de uso</a></footer>
+<script>
+fetch("https://prendz.github.io/the5amclub/data/site.json",{cache:"no-store"}).then(r=>r.json()).then(c=>{
+  document.querySelectorAll("[data-contato]").forEach(el=>{
+    el.innerHTML = c.email ? `pelo e-mail <a href="mailto:${c.email}">${c.email}</a>` : "pelos canais indicados no rodapé do site";
+  });
+}).catch(()=>{});
+</script>
+</body>
+</html>

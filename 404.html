@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Página não encontrada · The 5am Club</title>
+<meta name="description" content="Esta página não existe no The 5am Club.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1F3D2B">
+<link rel="icon" href="https://prendz.github.io/the5amclub/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="https://prendz.github.io/the5amclub/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="https://prendz.github.io/the5amclub/apple-touch-icon.png">
+<meta property="og:image" content="https://prendz.github.io/the5amclub/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBF4E6;color:#1F3D2B;font-family:"DM Sans",system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.top{background:#1F3D2B;color:#FBF4E6;padding:14px 18px}
+.top a{text-decoration:none;font-family:Fraunces,Georgia,serif;font-size:24px}
+.top i{font-weight:400} .top b{font-weight:900}
+main{max-width:760px;margin:0 auto;padding:32px 18px 60px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:900;font-size:clamp(30px,6vw,44px);line-height:1.1;margin:0 0 8px}
+h2{font-family:Fraunces,Georgia,serif;font-size:22px;margin:30px 0 6px}
+.muted{color:#5d6f63;font-size:14px}
+.btn{display:inline-block;background:#1F3D2B;color:#FBF4E6;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:999px;margin-top:18px}
+footer{max-width:760px;margin:0 auto;padding:0 18px 40px;font-size:13px;color:#5d6f63}
+footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<header class="top"><a href="https://prendz.github.io/the5amclub/"><i>the</i> <b>5am</b> <b>club</b></a></header>
+<main style="text-align:center;padding-top:70px">
+<svg viewBox="0 0 100 62" width="120" aria-hidden="true"><path d="M14 56 A36 36 0 0 1 86 56 Z" fill="#F79A3E"/></svg>
+<h1>essa página ainda não acordou.</h1>
+<p>O link que você abriu não existe ou mudou de lugar. Os produtos continuam todos na vitrine.</p>
+<a class="btn" href="https://prendz.github.io/the5amclub/">voltar para a vitrine</a>
+</main>
+<footer><a href="https://prendz.github.io/the5amclub/">Início</a><a href="https://prendz.github.io/the5amclub/privacidade.html">Política de privacidade</a><a href="https://prendz.github.io/the5amclub/termos.html">Termos de uso</a></footer>
+<script>
+fetch("https://prendz.github.io/the5amclub/data/site.json",{cache:"no-store"}).then(r=>r.json()).then(c=>{
+  document.querySelectorAll("[data-contato]").forEach(el=>{
+    el.innerHTML = c.email ? `pelo e-mail <a href="mailto:${c.email}">${c.email}</a>` : "pelos canais indicados no rodapé do site";
+  });
+}).catch(()=>{});
+</script>
+</body>
+</html>
