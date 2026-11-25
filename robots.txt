@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://prendz.github.io/the5amclub/sitemap.xml
+Sitemap: https://the5amclub.github.io/sitemap.xml
