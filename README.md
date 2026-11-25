@@ -5,7 +5,9 @@ curadoria para o seu melhor horário. Loja de curadoria de wellness feminino com
 - `index.html`: o site (GitHub Pages).
 - `data/products.json`: catálogo.
 - `assets/img/`: fotos dos produtos.
-- `scripts/` e `.github/workflows/`: robô de preços (pausado).
+- `robo/`: rotina de preços pelo navegador do PC (ver `robo/ROTINA.md`).
+- `tests/` e `.github/workflows/checagem.yml`: checagem automática a cada mudança.
+- `data/site.json`: contato, Instagram, WhatsApp e Google Analytics.
 
 ## Campos do catálogo
 
@@ -30,3 +32,13 @@ Tocar na foto, no nome ou no botão do card leva direto para a loja. Tocar no se
 ## Próximo passo: foto do clube
 
 A ideia é uma automação (no mesmo estilo do robô de preços) que pega `img`, gera uma versão com o fundo e a luz da identidade do clube e salva em `assets/img/clube/`, preenchendo `img_clube`. O site já está pronto para ler esse campo; não precisa mexer no `index.html`.
+
+## Checagem automática
+
+A cada mudança na `main` (e em todo PR), o GitHub roda a "Checagem do site":
+
+1. `tests/check_data.py`: catálogo válido, todo produto com foto, link do Mercado Livre/Shopee e filtro que existe; páginas com título e descrição; nenhum link interno quebrado.
+2. `tests/browser_test.py`: abre o site no celular (360 px) e no computador e testa cards, fotos, links de compra, filtros, "compre pela sua manhã", ficha do clube, páginas legais, rolagem lateral e erros de JavaScript.
+3. Lighthouse no celular: nota de desempenho, acessibilidade, boas práticas e SEO (avisa abaixo de 80, não bloqueia).
+
+Os prints e o relatório ficam em Actions → execução → "prints-e-relatorio". Para rodar no computador: `python tests/check_data.py` e `python tests/browser_test.py`.

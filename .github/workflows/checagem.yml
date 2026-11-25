@@ -1,0 +1,66 @@
+name: Checagem do site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  checar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Catálogo, arquivos e links internos
+        run: python tests/check_data.py
+
+      - name: Instalar navegador de teste
+        run: |
+          pip install -q playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Site no celular e no computador
+        run: python tests/browser_test.py prints
+
+      - name: Nota do Lighthouse (celular)
+        if: always()
+        continue-on-error: true
+        run: |
+          python -m http.server 8080 >/dev/null 2>&1 &
+          sleep 2
+          npx -y lighthouse@12 http://localhost:8080/ --quiet --form-factor=mobile \
+            --only-categories=performance,accessibility,best-practices,seo \
+            --chrome-flags="--headless=new --no-sandbox" \
+            --output=json --output=html --output-path=prints/lighthouse
+          python - <<'PY'
+          import json, os
+          r = json.load(open("prints/lighthouse.report.json"))
+          linhas = ["| Categoria | Nota |", "| --- | --- |"]
+          baixo = []
+          for k, c in r["categories"].items():
+              n = round((c["score"] or 0) * 100)
+              linhas.append(f"| {c['title']} | {n} |")
+              if n < 80:
+                  baixo.append(f"{c['title']}: {n}")
+          texto = "### Lighthouse (celular)\n\n" + "\n".join(linhas) + "\n"
+          print(texto)
+          open(os.environ["GITHUB_STEP_SUMMARY"], "a").write(texto)
+          for b in baixo:
+              print(f"::warning::Lighthouse abaixo de 80 — {b}")
+          PY
+
+      - name: Guardar prints e relatório
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prints-e-relatorio
+          path: prints/
+          retention-days: 14

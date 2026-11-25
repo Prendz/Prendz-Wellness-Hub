@@ -184,7 +184,7 @@ section.shelf,#manha,#curadoria{scroll-margin-top:64px}
 .store.sh{background:#EE4D2D;color:#fff}
 .card h3{font-family:var(--body);font-size:15px;font-weight:500;letter-spacing:0;line-height:1.3}
 .title-link:hover{text-decoration:underline;text-underline-offset:2px}
-.why{font-family:var(--hand);font-weight:600;font-size:18px;line-height:1.1;color:#c66a12;margin:0}
+.why{font-family:var(--hand);font-weight:600;font-size:18px;line-height:1.1;color:#a3530b;margin:0}
 .open-ficha{align-self:flex-start;background:none;border:0;padding:0;font-size:12.5px;font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer;color:var(--matcha)}
 .deal{display:grid;gap:1px;font-variant-numeric:tabular-nums;margin-top:auto;padding-top:6px}
 .deal .row1{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
@@ -444,33 +444,33 @@ function card(it, cat){
   if(outRecent){
     deal = `<div class="deal"><span class="lbl">esgotado no momento</span>
       <span class="seen">Sem estoque na última checagem, ${ago(it.checked_at)}. Pode voltar a qualquer hora.</span></div>
-      <a class="buy" href="${it.url}" ${rel}>ver <span class="s-short">na loja</span><span class="s-long">${storeIn(it)}</span> ↗</a>`;
+      <a class="buy" href="${esc(it.url)}" ${rel}>ver <span class="s-short">na loja</span><span class="s-long">${storeIn(it)}</span> ↗</a>`;
   } else if(fresh){
     const note = it.pix_price ? `no Pix · ${brl(it.price)} em outros meios` : (it.price_note||"");
     deal = `<div class="deal"><div class="row1"><span class="now">${brl(best)}</span>${ref?`<span class="was">${brl(ref)}</span>`:""}</div>
       ${ref?`<span class="save">economize ${brl(ref-best)}</span>`:""}
       ${note?`<span class="pay">${esc(note)}</span>`:""}
       <span class="seen">${it.event?`Oferta ${esc(it.event)}. `:""}Preço atualizado ${ago(it.checked_at)}</span></div>
-      <a class="buy" href="${it.url}" ${rel}>ver <span class="s-short">na loja</span><span class="s-long">${storeIn(it)}</span> ↗</a>`;
+      <a class="buy" href="${esc(it.url)}" ${rel}>ver <span class="s-short">na loja</span><span class="s-long">${storeIn(it)}</span> ↗</a>`;
   } else if(rangeOk(it)){
     const lo = Math.floor(Math.min(...it.seen.map(x=>x.p))), hi = it.ref_high;
     const last = new Date(Math.max(...it.seen.map(x=>new Date(x.t).getTime())));
     deal = `<div class="deal"><span class="lbl">faixa de preço</span><span class="range">${brl0(lo)} <i>a</i> ${brl0(hi)}</span>
       <span class="seen">Referência de ${last.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"})}. O preço muda com as promoções: confira o valor de hoje na loja.</span></div>
-      <a class="buy" href="${it.url}" ${rel}>preço de hoje <span class="s-long">${storeIn(it)}</span> ↗</a>`;
+      <a class="buy" href="${esc(it.url)}" ${rel}>preço de hoje <span class="s-long">${storeIn(it)}</span> ↗</a>`;
   } else {
-    deal = `<a class="buy" href="${it.url}" ${rel}>ver preço <span class="s-long">${storeIn(it)}</span> ↗</a>`;
+    deal = `<a class="buy" href="${esc(it.url)}" ${rel}>ver preço <span class="s-long">${storeIn(it)}</span> ↗</a>`;
   }
   return `<article class="card" data-f="${esc(it.f)}">
     <div class="media">
-      <a class="art-link" href="${it.url}" ${rel} aria-label="Ver ${esc(it.n)} ${storeIn(it)}"><div class="art">${photo(it)?`<img src="${photo(it)}" alt="${esc(it.n)}" loading="lazy" decoding="async" width="720" height="720">`:`<svg aria-hidden="true"><use href="#${cat.icon}"/></svg>`}</div></a>
+      <a class="art-link" href="${esc(it.url)}" ${rel} aria-label="Ver ${esc(it.n)} ${storeIn(it)}"><div class="art">${photo(it)?`<img src="${photo(it)}" alt="${esc(it.n)}" loading="lazy" decoding="async" width="720" height="720">`:`<svg aria-hidden="true"><use href="#${cat.icon}"/></svg>`}</div></a>
       ${chips.length?`<div class="tags">${chips.join("")}</div>`:""}
       ${it.official?`<span class="official"><svg width="11" height="11"><use href="#i-check"/></svg>loja oficial</span>`:""}
       <button class="seal" type="button" data-ficha="${id}" aria-label="Por que ${esc(it.n)} entrou no clube">${sealSvg()}</button>
     </div>
     <div class="body">
       <div class="meta"><span class="brand">${esc(it.marca || "")}</span>${storeBadge(it)}</div>
-      <h3><a class="title-link" href="${it.url}" ${rel}>${esc(it.n)}</a></h3>
+      <h3><a class="title-link" href="${esc(it.url)}" ${rel}>${esc(it.n)}</a></h3>
       <p class="why">${esc(cur.por_que || shortSpec(it.s))}</p>
       <button class="open-ficha" type="button" data-ficha="${id}">ver ficha do clube</button>
       ${deal}
@@ -527,7 +527,7 @@ function openFicha(id, push=true){
         ${fresh?`<div class="p"><b>${brl(best)}</b>${ref?`<s>${brl(ref)}</s>`:""}</div>`:""}
       </div>
       ${fresh?`<div class="note2">Preço atualizado ${ago(it.checked_at)}. Pode mudar na loja.</div>`:`<div class="note2">O preço muda com as promoções: confira o valor de hoje na loja.</div>`}
-      <a class="btn" href="${it.url}" target="_blank" rel="nofollow sponsored noopener">comprar ${storeIn(it)} ↗</a>
+      <a class="btn" href="${esc(it.url)}" target="_blank" rel="nofollow sponsored noopener">comprar ${storeIn(it)} ↗</a>
     </div>
   </div>`;
   if(!ficha.open) ficha.showModal();
@@ -622,7 +622,7 @@ fetch("data/products.json", {cache:"no-store"}).then(r=>r.json()).then(d=>{
 /* Configurações do site (data/site.json): contato, WhatsApp e Google Analytics com consentimento. */
 fetch("data/site.json",{cache:"no-store"}).then(r=>r.json()).then(cfg=>{
   const parts=[];
-  if(cfg.email) parts.push(`Contato: <a href="mailto:${cfg.email}">${cfg.email}</a>`);
+  if(cfg.email) parts.push(`Contato: <a href="mailto:${esc(cfg.email)}">${esc(cfg.email)}</a>`);
   if(cfg.instagram) parts.push(`<a href="https://instagram.com/${cfg.instagram.replace("@","")}" target="_blank" rel="noopener">@${cfg.instagram.replace("@","")}</a>`);
   if(parts.length){ const c=document.getElementById("contato"); c.innerHTML=parts.join(" · "); c.hidden=false; }
   if(cfg.whatsapp){
@@ -649,6 +649,13 @@ function setupConsent(id){
       try{ localStorage.setItem("5am-cookies",b.dataset.c); }catch(err){}
       document.querySelector(".consent").remove();
       if(b.dataset.c==="yes") loadGA(id);
+      else if(window.gtag){
+        // recusou depois de ter aceitado: apaga os cookies do Analytics e recarrega sem ele
+        document.cookie.split(";").map(c=>c.split("=")[0].trim()).filter(n=>n.startsWith("_ga")).forEach(n=>{
+          for(const dom of ["", location.hostname, "."+location.hostname]) document.cookie = `${n}=; Max-Age=0; path=/${dom?"; domain="+dom:""}`;
+        });
+        location.reload();
+      }
     });
   };
   prefs.addEventListener("click",e=>{e.preventDefault(); ask();});
