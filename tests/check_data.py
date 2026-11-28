@@ -80,6 +80,8 @@ def check_catalog():
                 err(f"{n}: falta a versão pequena da foto (rode python robo/fotos.py): {img}")
             elif os.path.getsize(os.path.join(ROOT, img)) > 250_000:
                 warn(f"{n}: foto pesada ({os.path.getsize(os.path.join(ROOT, img)) // 1024} KB): {img}")
+            if "opcoes" in it and (not isinstance(it["opcoes"], str) or not it["opcoes"].strip()):
+                err(f"{n}: campo 'opcoes' deve ser um texto, ex.: '3 cores'")
             p = it.get("price")
             if p is not None and (not isinstance(p, (int, float)) or p <= 0):
                 err(f"{n}: preço inválido {p!r}")

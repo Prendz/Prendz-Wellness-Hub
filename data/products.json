@@ -549,7 +549,8 @@
       "testado": "",
       "notas": {},
       "checou": []
-     }
+     },
+     "opcoes": "3 cores"
     },
     {
      "n": "Par de halteres Le Must 4 kg · Peach",
@@ -576,7 +577,8 @@
       "testado": "",
       "notas": {},
       "checou": []
-     }
+     },
+     "opcoes": "6 cores"
     },
     {
      "n": "Pesos de pulso e tornozelo Le Must Duo 2,7 kg · Sereia",
@@ -603,7 +605,8 @@
       "testado": "",
       "notas": {},
       "checou": []
-     }
+     },
+     "opcoes": "5 cores"
     },
     {
      "n": "Kit Le Must pesos de pulso 1,8 kg + halteres 4 kg · Greige",
@@ -707,6 +710,35 @@
       }
      ],
      "ref_high": 116,
+     "curadoria": {
+      "por_que": "",
+      "testado": "",
+      "notas": {},
+      "checou": []
+     },
+     "opcoes": "1 kg, 1,5 kg e 2 kg"
+    },
+    {
+     "n": "Kettlebell macio antiderrapante",
+     "s": "Revestimento macio que protege o piso, com luvas. Mais de mil vendidos",
+     "f": "Pesos",
+     "url": "https://s.shopee.com.br/3VmBEBO8va",
+     "store": "Shopee",
+     "img": "assets/img/kettlebell-macio.webp",
+     "price": 59.98,
+     "original_price": null,
+     "price_note": "ou 11x de R$ 6,30",
+     "event": null,
+     "opcoes": "rosa ou azul",
+     "checked_at": "2026-11-28T10:05:00Z",
+     "price_source": "print",
+     "seen": [
+      {
+       "t": "2026-11-28T10:05:00Z",
+       "p": 59.98
+      }
+     ],
+     "ref_high": 60,
      "curadoria": {
       "por_que": "",
       "testado": "",
